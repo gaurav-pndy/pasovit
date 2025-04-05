@@ -17,12 +17,12 @@ const services = [
   {
     title: "Digital Marketing",
     image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-3_1.svg", // Replace with actual image path
-    link: "#",
+    link: "/digital-marketing",
   },
   {
     title: "Healthcare Facilitator",
     image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-4_1.svg", // Replace with actual image path
-    link: "#",
+    link: "/healthcare-facilitator",
   },
 ];
 
@@ -154,7 +154,7 @@ export default function Header() {
                         Application Development
                       </Link>
                       <Link
-                        to="/ai-automation"
+                        to="/artificial-intelligence"
                         className="block px-4 py-3 "
                         onClick={() => setIsOpen(false)}
                       >

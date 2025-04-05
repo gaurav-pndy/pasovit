@@ -85,10 +85,10 @@ export default function Footer() {
 
         {/* Middle Section - Quick Links */}
         <div className="xl:pl-20 ">
-          <h3 className="font-semibold text-lg text-center md:text-left">
+          <h3 className="font-semibold text-lg text-center lg:text-left">
             QUICK LINKS
           </h3>
-          <div className="flex flex-col md:flex-row   justify-start gap-4 xl:gap-20 ">
+          <div className="flex flex-col md:flex-row  justify-between lg:justify-start gap-4 xl:gap-20 ">
             <ul className="mt-4 space-y-2.5 ">
               <li>
                 <Link to="/" className="hover:underline hover:text-yellow-200 ">
@@ -170,9 +170,9 @@ export default function Footer() {
         </div>
 
         {/* Right Section - Contact Info */}
-        <div className=" flex flex-col items-center  ">
+        <div className=" flex flex-col items-center lg:items-start  ">
           <h3 className="font-semibold text-lg">CONTACT INFO</h3>
-          <ul className="mt-4 space-y-2 flex md:flex-col  w-full  justify-between">
+          <ul className="mt-4 space-y-2 flex lg:flex-col  w-full  justify-evenly lg:justify-between items-center lg:items-start">
             <li>
               <a
                 href="tel:+919871819993"

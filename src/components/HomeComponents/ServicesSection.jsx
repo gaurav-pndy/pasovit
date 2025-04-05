@@ -15,12 +15,12 @@ const services = [
   {
     title: "Digital <br/> Marketing",
     image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-3_1.svg", // Replace with actual image path
-    link: "#",
+    link: "/digital-marketing",
   },
   {
     title: "Healthcare <br/> Facilitator",
     image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-4_1.svg", // Replace with actual image path
-    link: "#",
+    link: "/healthcare-facilitator",
   },
 ];
 
