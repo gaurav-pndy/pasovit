@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section
-      className="relative flex flex-col md:flex-row items-center justify-between md:h-[calc(100vh-6rem)] gap-20  px-8 md:px-16 lg:px-32 py-16 "
+      className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[calc(100vh-6rem)] gap-20  px-8 md:px-16 xl:px-32 py-16 "
       style={{
         backgroundImage:
           "url('https://www.pasovit.com/wp-content/uploads/2022/02/Hero-background-min.png')",
@@ -9,7 +9,7 @@ export default function Hero() {
       }}
     >
       {/* Left Side Content */}
-      <div className="md:w-1/2 text-center md:text-left">
+      <div className="lg:w-1/2 text-center lg:text-left">
         <h1 className="text-[2.4rem] md:text-7xl font-bold leading-tight">
           We develop <br />
           <span className="text-black">Digital Solutions</span>
@@ -24,7 +24,7 @@ export default function Hero() {
       </div>
 
       {/* Right Side Illustration */}
-      <div className="md:w-1/2 flex justify-center">
+      <div className="lg:w-1/2 flex justify-center">
         <img
           src="https://www.pasovit.com/wp-content/uploads/2022/02/Asset-6.svg"
           alt="Rocket Illustration"

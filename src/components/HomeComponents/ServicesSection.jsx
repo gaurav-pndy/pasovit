@@ -26,12 +26,12 @@ const services = [
 const ServicesSection = () => {
   return (
     <section className="py-16 px-6  max-w-6xl mx-auto">
-      <div className="md:pl-6 text-center md:text-left">
+      <div className="md:pl-6 text-center lg:text-left">
         <p className="text-red-600 text-sm  tracking-widest uppercase">
           Explore
         </p>
         <h2 className="text-3xl md:text-[2.5rem] font-semibold leading-10 mt-4">
-          Services we <br className="hidden md:block" /> offer
+          Services we <br className="hidden lg:block" /> offer
         </h2>
       </div>
 

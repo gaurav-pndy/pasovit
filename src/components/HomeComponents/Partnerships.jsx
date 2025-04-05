@@ -36,9 +36,9 @@ const partners = [
 
 const Partnerships = () => {
   return (
-    <section className="w-full mt-5 py-12 bg-white">
+    <section className="w-full mt-10 lg:mt-5 py-12 bg-white">
       <div className="container mx-auto max-w-6xl px-8 ">
-        <div className="md:pl-6 text-center md:text-left">
+        <div className="md:pl-6 text-center lg:text-left">
           <p className="text-red-600 text-sm  tracking-widest uppercase">
             Our Bond
           </p>
@@ -46,7 +46,7 @@ const Partnerships = () => {
             It’s all about our <br className="hidden md:block" /> Partnership
           </h2>
         </div>
-        <div className="mt-6 md:mt-10">
+        <div className="mt-6 md:mt-10 overflow-hidden">
           <Swiper
             modules={[Navigation, Autoplay]}
             autoplay={{ delay: 2500 }}

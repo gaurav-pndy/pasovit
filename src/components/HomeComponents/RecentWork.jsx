@@ -17,7 +17,7 @@ const recentWorks = [
 const RecentWork = () => {
   return (
     <section
-      className="relative mt-4  pt-10 px-4 md:px-12.5 bg-left"
+      className="relative mt-4  pt-10 px-4 lg:px-12.5 bg-left"
       style={{
         backgroundImage:
           "url('https://www.pasovit.com/wp-content/uploads/2022/02/our-work-background-min.png')",
@@ -26,11 +26,11 @@ const RecentWork = () => {
         backgroundSize: "cover",
       }} // Replace with actual path
     >
-      <div className=" mx-auto flex flex-col md:flex-row items-center  md:min-h-[31.3rem]">
+      <div className=" mx-auto flex flex-col lg:flex-row items-center  lg:min-h-[31.3rem]">
         {/* Left Side - Text Content */}
-        <div className="md:w-[45%] text-left  text-[#262626]">
+        <div className="lg:w-[45%] text-left  text-[#262626]">
           <h2 className="text-5xl md:text-[4.1rem] font-[900]  md:leading-[4.5rem] ">
-            Our <br className="hidden md:block" />{" "}
+            Our <br className="hidden lg:block" />{" "}
             <span className="">recent great</span>{" "}
             <span className="">Work</span>
             <span className="text-red-500">.</span>
@@ -44,7 +44,7 @@ const RecentWork = () => {
         </div>
 
         {/* Right Side - Swiper Carousel */}
-        <div className="md:w-[55%] w-full mt-12 md:mt-0">
+        <div className="lg:w-[55%] w-full mt-10 lg:mt-0">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             autoplay={{ delay: 3000 }}

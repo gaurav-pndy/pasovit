@@ -43,7 +43,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-10 text-xl text-[#001e8a] font-semibold">
+        <nav className="hidden lg:flex space-x-10 text-xl text-[#001e8a] font-semibold">
           {/* Dropdown Menu */}
           <div
             className=" group"
@@ -102,14 +102,14 @@ export default function Header() {
         {/* Call to Action Button */}
         <Link
           to="/book-call"
-          className="hidden md:block bg-[#001e8a] text-white px-6 py-2.5 rounded font-medium hover:bg-blue-800"
+          className="hidden lg:block bg-[#001e8a] text-white px-6 py-2.5 rounded font-medium hover:bg-blue-800"
         >
           Book Free Strategy Call
         </Link>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-[#001e8a]"
+          className="lg:hidden text-[#001e8a]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={40} /> : <Menu size={40} />}
@@ -124,7 +124,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2, ease: "easeInOut" }}
-              className="absolute top-22 left-0 w-full bg-white shadow-md py-4 flex flex-col items-center space-y-6 text-lg md:hidden z-50"
+              className="absolute top-22 left-0 w-full bg-white shadow-md py-4 flex flex-col items-center space-y-6 text-lg lg:hidden z-50"
             >
               {/* Dropdown for mobile */}
               <div className="w-full text-center text-[#001e8a]">

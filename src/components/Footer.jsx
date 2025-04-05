@@ -19,7 +19,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer className="bg-[#001e8a] text-white py-10">
-      <div className=" mx-auto px-5 md:px-8 grid md:grid-cols-[1fr_1.5fr_auto] gap-8 md:gap-10 ">
+      <div className=" mx-auto px-5 md:px-8 grid lg:grid-cols-[0.6fr_1.2fr_auto]  xl:grid-cols-[1fr_1.5fr_auto] gap-8 md:gap-10 ">
         {/* Left Section - Logo & Socials */}
         <div>
           <img
@@ -84,11 +84,11 @@ export default function Footer() {
         </div>
 
         {/* Middle Section - Quick Links */}
-        <div className="md:pl-20 ">
+        <div className="xl:pl-20 ">
           <h3 className="font-semibold text-lg text-center md:text-left">
             QUICK LINKS
           </h3>
-          <div className="flex flex-col md:flex-row   justify-start gap-4 md:gap-20 ">
+          <div className="flex flex-col md:flex-row   justify-start gap-4 xl:gap-20 ">
             <ul className="mt-4 space-y-2.5 ">
               <li>
                 <Link to="/" className="hover:underline hover:text-yellow-200 ">
