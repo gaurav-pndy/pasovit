@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 
@@ -6,4 +6,44 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     
+}
+
+.font-raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
+.testimonial-section:before {
+    position: absolute;
+    left: -200px;
+    top: 20%;
+    background-image: url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 701px;
+    height: 756px;
+    content: "";
+    -webkit-animation: fa-spin 25s infinite alternate;
+    animation: fa-spin 25s infinite alternate;
+}
+
+
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .about-bg{
+        background-size: 150%;
+    }
+
+   
 }

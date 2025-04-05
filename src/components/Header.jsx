@@ -1,6 +1,30 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+
+const services = [
+  {
+    title: "Application Development",
+    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-1_1.svg", // Replace with actual image path
+    link: "#",
+  },
+  {
+    title: "Artificial intelligence & Automation services",
+    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-2_1.svg", // Replace with actual image path
+    link: "#",
+  },
+  {
+    title: "Digital Marketing",
+    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-3_1.svg", // Replace with actual image path
+    link: "#",
+  },
+  {
+    title: "Healthcare Facilitator",
+    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-4_1.svg", // Replace with actual image path
+    link: "#",
+  },
+];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,41 +46,43 @@ export default function Header() {
         <nav className="hidden md:flex space-x-10 text-xl text-[#001e8a] font-semibold">
           {/* Dropdown Menu */}
           <div
-            className="relative group"
+            className=" group"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
             <button className="flex items-center hover:text-blue-700 transition-all cursor-pointer duration-300">
-              What We Do <ChevronDown size={20} className="ml-2" />
+              What We Do ? <ChevronDown size={20} className="ml-2" />
             </button>
-            {dropdownOpen && (
-              <div className="absolute left-[50%] translate-x-[-50%] bg-white   py-2 w-80">
-                <Link
-                  to="/application-development"
-                  className="block px-4 py-2  hover:bg-blue-100"
+            <AnimatePresence>
+              {dropdownOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -30 }}
+                  transition={{ duration: 0.25, ease: "easeInOut" }}
+                  className="absolute left-0 mt-6 bg-white shadow-lg py-6 w-screen z-50"
                 >
-                  Application Development
-                </Link>
-                <Link
-                  to="/ai-automation"
-                  className="block px-4 py-2  hover:bg-blue-100"
-                >
-                  Artificial Intelligence & Automation Services
-                </Link>
-                <Link
-                  to="/digital-marketing"
-                  className="block px-4 py-2  hover:bg-blue-100"
-                >
-                  Digital Marketing
-                </Link>
-                <Link
-                  to="/healthcare-facilitator"
-                  className="block px-4 py-2  hover:bg-blue-100"
-                >
-                  Healthcare Facilitator
-                </Link>
-              </div>
-            )}
+                  <div className="max-w-7xl w-full mx-auto grid grid-cols-4 gap-6">
+                    {services.map((service, index) => (
+                      <Link
+                        key={index}
+                        to={service.link}
+                        className="flex flex-col items-center text-center group hover:text-blue-700 transition duration-300"
+                      >
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="h-24 w-24 object-contain mb-3 hover:scale-110 transition-transform duration-300"
+                        />
+                        <div className="text-base font-semibold text-gray-800 leading-tight">
+                          {service.title}
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
 
           <Link
@@ -90,73 +116,91 @@ export default function Header() {
         </button>
 
         {/* Mobile Menu */}
-        {isOpen && (
-          <div className="absolute top-16 left-0 w-full bg-white shadow-md py-4 flex flex-col items-center space-y-4 md:hidden">
-            {/* Dropdown for mobile */}
-            <div className="w-full text-center">
-              <button
-                className="text-blue-700 font-medium flex justify-center items-center w-full py-2"
-                onClick={() => setDropdownOpen(!dropdownOpen)}
-              >
-                What We Do <ChevronDown size={20} className="ml-2" />
-              </button>
-              {dropdownOpen && (
-                <div className="w-full bg-gray-100">
-                  <Link
-                    to="/application-development"
-                    className="block px-4 py-2 text-blue-700 hover:bg-blue-200"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Application Development
-                  </Link>
-                  <Link
-                    to="/ai-automation"
-                    className="block px-4 py-2 text-blue-700 hover:bg-blue-200"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Artificial Intelligence & Automation Services
-                  </Link>
-                  <Link
-                    to="/digital-marketing"
-                    className="block px-4 py-2 text-blue-700 hover:bg-blue-200"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Digital Marketing
-                  </Link>
-                  <Link
-                    to="/healthcare-facilitator"
-                    className="block px-4 py-2 text-blue-700 hover:bg-blue-200"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Healthcare Facilitator
-                  </Link>
-                </div>
-              )}
-            </div>
 
-            <Link
-              to="/about"
-              className="text-blue-700 font-medium"
-              onClick={() => setIsOpen(false)}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              className="absolute top-22 left-0 w-full bg-white shadow-md py-4 flex flex-col items-center space-y-6 text-lg md:hidden z-50"
             >
-              About Us
-            </Link>
-            <Link
-              to="/contact"
-              className="text-blue-700 font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact Us
-            </Link>
-            <Link
-              to="/book-call"
-              className="bg-blue-700 text-white px-4 py-2 rounded-md font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Book Free Strategy Call
-            </Link>
-          </div>
-        )}
+              {/* Dropdown for mobile */}
+              <div className="w-full text-center text-[#001e8a]">
+                <button
+                  className=" font-medium flex justify-center items-center w-full "
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                >
+                  What We Do <ChevronDown size={20} className="ml-2" />
+                </button>
+
+                <AnimatePresence>
+                  {dropdownOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="w-full bg-gray-100 overflow-hidden"
+                    >
+                      <Link
+                        to="/application-development"
+                        className="block px-4 py-3 "
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Application Development
+                      </Link>
+                      <Link
+                        to="/ai-automation"
+                        className="block px-4 py-3 "
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Artificial Intelligence & Automation Services
+                      </Link>
+                      <Link
+                        to="/digital-marketing"
+                        className="block px-4 py-3 "
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Digital Marketing
+                      </Link>
+                      <Link
+                        to="/healthcare-facilitator"
+                        className="block px-4 py-3 "
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Healthcare Facilitator
+                      </Link>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <Link
+                to="/about"
+                className="text-[#001e8a] font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                About Us
+              </Link>
+              <Link
+                to="/contact"
+                className="text-[#001e8a] font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact Us
+              </Link>
+              <Link
+                to="/book-call"
+                className="bg-[#001e8a] text-white px-4 py-2 rounded font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Book Free Strategy Call
+              </Link>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );
