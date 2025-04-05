@@ -11,12 +11,11 @@ export default function AboutSection() {
       }}
     >
       {/* ABOUT Title */}
-      <h3 className="text-red-600 text-sm  tracking-widest">ABOUT</h3>
-
+      <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">ABOUT</p>
       {/* Main Heading */}
-      <h2 className="text-3xl md:text-[2.5rem] font-semibold mt-5">
+      <h2 className="text-3xl ext-[#262626] md:text-[2.5rem] font-semibold mt-5">
         Let's transform your business,{" "}
-        <span className="text-red-600">Digitally!</span>
+        <span className="text-[#E81F38]">Digitally!</span>
       </h2>
 
       {/* Description */}

@@ -39,8 +39,8 @@ const Testimonials = () => {
     >
       <div className="m-7.5 max-w-5xl mx-auto relative">
         <div className="text-center">
-          <h3 className="text-white text-sm tracking-widest">TESTIMONIALS</h3>
-          <h2 className="text-2xl md:text-3xl lg:text-[2.5rem] text-white font-semibold mt-5">
+          <h3 className="text-white text-sm tracking-[2px]">TESTIMONIALS</h3>
+          <h2 className="text-2xl md:text-3xl tracking-wide lg:text-[2.5rem] text-white font-semibold mt-5">
             Voices of our clients
           </h2>
         </div>

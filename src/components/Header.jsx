@@ -7,7 +7,7 @@ const services = [
   {
     title: "Application Development",
     image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-1_1.svg", // Replace with actual image path
-    link: "#",
+    link: "/application-development",
   },
   {
     title: "Artificial intelligence & Automation services",
