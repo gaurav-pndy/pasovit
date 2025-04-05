@@ -12,7 +12,7 @@ const services = [
   {
     title: "Artificial intelligence & Automation services",
     image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-2_1.svg", // Replace with actual image path
-    link: "#",
+    link: "/artificial-intelligence",
   },
   {
     title: "Digital Marketing",
@@ -35,11 +35,13 @@ export default function Header() {
       <div className="max-w-7xl md:px-10 w-full flex justify-between items-center mx-auto">
         {/* Logo */}
         <div className="text-2xl font-bold text-blue-700">
-          <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/main-logo-big.svg"
-            alt="Pasovit"
-            className="h-10 md:h-12"
-          />
+          <Link to={"/"}>
+            <img
+              src="https://www.pasovit.com/wp-content/uploads/2022/02/main-logo-big.svg"
+              alt="Pasovit"
+              className="h-10 md:h-12"
+            />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}

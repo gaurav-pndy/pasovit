@@ -10,7 +10,7 @@ const services = [
   {
     title: "Artificial intelligence & Automation services",
     image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-2_1.svg", // Replace with actual image path
-    link: "#",
+    link: "/artificial-intelligence",
   },
   {
     title: "Digital <br/> Marketing",

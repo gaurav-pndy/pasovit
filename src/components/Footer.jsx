@@ -111,7 +111,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/ai-automation"
+                    to="/artificial-intelligence"
                     className="hover:underline hover:text-yellow-200 "
                   >
                     Artificial Intelligence & Automation
