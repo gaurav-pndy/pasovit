@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+// import CalButton from "../hooks/CalButton";
+// import { openCalPopup } from "../hooks/useCal";
+// import CalFloatingButton from "../hooks/useCalcom";
 
 const services = [
   {
@@ -102,12 +105,11 @@ export default function Header() {
         </nav>
 
         {/* Call to Action Button */}
-        <Link
-          to="/book-call"
-          className="hidden lg:block bg-[#001e8a] text-white px-6 py-2.5 rounded font-medium hover:bg-blue-800"
-        >
+        <button className="hidden lg:block bg-[#001e8a] cursor-pointer text-white px-6 py-2.5 rounded font-medium hover:bg-blue-800">
           Book Free Strategy Call
-        </Link>
+        </button>
+        {/* <CalButton /> */}
+        {/* <CalFloatingButton /> */}
 
         {/* Mobile Menu Button */}
         <button
@@ -193,13 +195,9 @@ export default function Header() {
               >
                 Contact Us
               </Link>
-              <Link
-                to="/book-call"
-                className="bg-[#001e8a] text-white px-4 py-2 rounded font-medium"
-                onClick={() => setIsOpen(false)}
-              >
+              <button className="bg-[#001e8a] text-white px-4 py-2 rounded font-medium">
                 Book Free Strategy Call
-              </Link>
+              </button>
             </motion.div>
           )}
         </AnimatePresence>

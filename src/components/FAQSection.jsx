@@ -74,7 +74,7 @@ export default function FaqSection() {
   return (
     <section className="max-w-6xl mx-auto px-4 py-10 md:py-20 ">
       <div className="text-center lg:text-left lg:pl-4 mb-10 lg:mb-14">
-        <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">FAQs</p>
+        <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">FAQs</p>
         <h2 className="text-3xl tracking-wide text-[#262626] md:text-[2.5rem] font-[500] leading-10 mt-4">
           Still not sure if Custom App Development{" "}
           <br className="hidden lg:block" />

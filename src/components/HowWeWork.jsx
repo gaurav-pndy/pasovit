@@ -6,7 +6,7 @@ export default function HowWeWork() {
       <div className="max-w-6xl mx-auto px-4">
         {/* Heading */}
         <div className="text-center mb-16">
-          <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">
+          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             HOW WE WORK
           </p>
           <h2 className="text-3xl tracking-wide text-[#262626] md:text-[2.5rem] font-[500] leading-10 mt-4">

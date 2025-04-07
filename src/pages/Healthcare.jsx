@@ -149,7 +149,7 @@ const Healthcare = () => {
 
       <section className="py-16 px-6  max-w-6xl mx-auto">
         <div className="md:pl-4 text-center lg:text-left">
-          <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">
+          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             healthcare{" "}
           </p>
           <h2 className="text-3xl md:text-[2.5rem] tracking-wide font-[500] leading-10 text-[#262626] mt-4">
@@ -194,7 +194,7 @@ const Healthcare = () => {
       <PyramidSection />
       <section className="max-w-6xl mx-auto mt-20 mb-4">
         <div className="md:pl-6 text-center">
-          <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">
+          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             A READ
           </p>
           <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">

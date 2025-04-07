@@ -12,12 +12,12 @@ const services = [
     title: "WEBSITE & WEB APP DEVELOPMENT",
     image:
       "https://www.pasovit.com/wp-content/uploads/2022/02/website-development.svg", // Replace with actual image path
-    link: "#",
+    link: "/application-development/web-development",
   },
   {
     title: "ANDROID & MOBILE APP DEVELOPMENT",
     image: "https://www.pasovit.com/wp-content/uploads/2022/02/mobile-app.svg", // Replace with actual image path
-    link: "#",
+    link: "/application-development/mobile-app-development",
   },
 ];
 
@@ -60,7 +60,7 @@ const AppDevelopment = () => {
 
       <section className="py-16 px-6  max-w-6xl mx-auto">
         <div className="md:pl-4 text-center lg:text-left">
-          <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">
+          <p className="text-[#E81F38] text-xl tracking-[2px] uppercase">
             OUR SERVICES
           </p>
           <h2 className="text-3xl md:text-[2.5rem] tracking-wide font-[500] leading-10 text-[#262626] mt-4">

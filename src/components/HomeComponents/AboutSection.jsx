@@ -11,7 +11,7 @@ export default function AboutSection() {
       }}
     >
       {/* ABOUT Title */}
-      <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">ABOUT</p>
+      <p className="text-[#E81F38] text-xl tracking-[2px] uppercase">ABOUT</p>
       {/* Main Heading */}
       <h2 className="text-3xl ext-[#262626] md:text-[2.5rem] font-semibold mt-5">
         Let's transform your business,{" "}

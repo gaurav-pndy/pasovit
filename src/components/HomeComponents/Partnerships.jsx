@@ -39,7 +39,7 @@ const Partnerships = () => {
     <section className="w-full mt-10 lg:mt-5 py-12 bg-white">
       <div className="container mx-auto max-w-6xl px-8 ">
         <div className="md:pl-6 text-center lg:text-left">
-          <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">
+          <p className="text-[#E81F38] text-xl tracking-[2px] uppercase">
             Our Bond
           </p>
           <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-semibold leading-10 mt-4">

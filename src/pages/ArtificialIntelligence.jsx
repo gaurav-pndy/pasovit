@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
 import WhyUs from "../components/WhyUs";
-import ProcessFlow from "../components/ProcessFlow";
 import WantToTalk from "../components/WantToTalk";
 import PyramidSection from "../components/PyramidSection";
 import ProcessFlow2 from "../components/ProcessFlow2";
@@ -16,30 +15,30 @@ const services = [
     title: "EMAIL MARKETING",
     image:
       "https://www.pasovit.com/wp-content/uploads/2024/08/elementor/thumbs/e-mail-marketing-automation.png", // Replace with actual image path
-    link: "#",
+    link: "/artificial-intelligence/email-marketing-automation",
   },
   {
     title: "CUSTOMER RELATIONSHIP MANAGEMENT (CRM) AUTOMATION",
     image:
       "https://www.pasovit.com/wp-content/uploads/2024/08/crm-automation-1.png", // Replace with actual image path
-    link: "#",
+    link: "/artificial-intelligence/crm-automation",
   },
   {
     title: "SOCIAL MEDIA AUTOMATION",
     image:
       "https://www.pasovit.com/wp-content/uploads/2024/08/social-media-automation-2.png", // Replace with actual image path
-    link: "#",
+    link: "/artificial-intelligence/sm-automation",
   },
   {
     title: "SALES & E-COMMERCE AUTOMATION",
     image: "https://www.pasovit.com/wp-content/uploads/2024/08/sales.png", // Replace with actual image path
-    link: "#",
+    link: "/artificial-intelligence/sales-ecom-automation",
   },
   {
     title: "CUSTOMER SUPPORT AUTOMATION",
     image:
       "https://www.pasovit.com/wp-content/uploads/2024/08/coustomer-support-automation-1.png", // Replace with actual image path
-    link: "#",
+    link: "/artificial-intelligence/customer-support-automation",
   },
 ];
 
@@ -85,7 +84,7 @@ const ArtificialIntelligence = () => {
 
       <section className="py-16 px-6  max-w-6xl mx-auto">
         <div className="md:pl-4 text-center lg:text-left">
-          <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">
+          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             AI & AUTOMATION
           </p>
           <h2 className="text-3xl md:text-[2.5rem] tracking-wide font-[500] leading-10 text-[#262626] mt-4">
@@ -128,7 +127,7 @@ const ArtificialIntelligence = () => {
       <PyramidSection />
       <section className="max-w-6xl mx-auto mt-20 mb-4">
         <div className="md:pl-6 text-center">
-          <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">
+          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             A READ
           </p>
           <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">

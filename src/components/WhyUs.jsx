@@ -35,7 +35,7 @@ export default function WhyUs() {
         {/* Left Content */}
         <div>
           <div className="text-center lg:text-left lg:pl-4">
-            <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">
+            <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
               WHY US
             </p>
             <h2 className="text-3xl sm:text-[2.5rem] tracking-wide font-[500] text-[#262626] mt-4 mb-16">

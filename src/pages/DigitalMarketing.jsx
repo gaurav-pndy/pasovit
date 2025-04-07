@@ -11,34 +11,34 @@ const services = [
     title: "LOGO DESIGN",
     image:
       "https://www.pasovit.com/wp-content/uploads/2024/08/logo-design-2.png", // Replace with actual image path
-    link: "#",
+    link: "/digital-marketing/logo-design-service",
   },
   {
     title: "FACEBOOK & INSTAGRAM ADS",
     image:
       "https://www.pasovit.com/wp-content/uploads/2024/08/fbinsta-ad-1.png", // Replace with actual image path
-    link: "#",
+    link: "/digital-marketing/fb-instagram-ads-service/",
   },
   {
     title: "GOOGLE ADSENSE",
     image: "https://www.pasovit.com/wp-content/uploads/2024/08/google-ads.png", // Replace with actual image path
-    link: "#",
+    link: "/digital-marketing/google-ads-service/",
   },
   {
     title: "SEARCH ENGINE OPTIMIZATION",
     image: "https://www.pasovit.com/wp-content/uploads/2024/08/seo.png", // Replace with actual image path
-    link: "#",
+    link: "/digital-marketing/seo-service/",
   },
   {
     title: "EMAIL MARKETING",
     image:
       "https://www.pasovit.com/wp-content/uploads/2024/08/email-marketing-2.png", // Replace with actual image path
-    link: "#",
+    link: "/digital-marketing/email-marketing-service/",
   },
   {
     title: "YOUTUBE ADS",
     image: "https://www.pasovit.com/wp-content/uploads/2024/08/youtube-ads.png", // Replace with actual image path
-    link: "#",
+    link: "/digital-marketing/youtube-ads-service/",
   },
 ];
 
@@ -84,7 +84,7 @@ const DigitalMarketing = () => {
 
       <section className="py-16 px-6  max-w-6xl mx-auto">
         <div className="md:pl-4 text-center lg:text-left">
-          <p className="text-[#E81F38] text-sm  tracking-[2px] uppercase">
+          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             digital marketing
           </p>
           <h2 className="text-3xl md:text-[2.5rem] tracking-wide font-[500] leading-10 text-[#262626] mt-4">
