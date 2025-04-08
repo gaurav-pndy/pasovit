@@ -97,7 +97,7 @@ const services = [
   {
     title: "Venous Port System Placement",
     description: "Installation of a venous port system for chemotherapy",
-    image: "src/assets/HealthcareImages/Venous Port System Placement.png",
+    image: "/Venous Port System Placement.png",
     link: "#",
   },
 ];
