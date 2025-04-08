@@ -1,3 +1,5 @@
+import CalButton from "../CalButton";
+
 export default function Hero() {
   return (
     <section
@@ -18,9 +20,10 @@ export default function Hero() {
         <p className="mt-4 text-gray-800 text-xl">
           Let’s build coherent solutions to scale your business, digitally!
         </p>
-        <button className="mt-6 bg-[#001e8a] text-white  rounded font-medium hover:bg-blue-800 cursor-pointer px-6 py-3  md:text-lg shadow-md  transition-all duration-300">
-          Book Free Strategy Call
-        </button>
+
+        <div className="mt-6">
+          <CalButton />
+        </div>
       </div>
 
       {/* Right Side Illustration */}

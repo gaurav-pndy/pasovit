@@ -1,4 +1,5 @@
 import React from "react";
+import CalButton from "../CalButton";
 
 const CTASection = () => {
   return (
@@ -11,9 +12,9 @@ const CTASection = () => {
             <br className="hidden md:block" />
             Partnership in mind?
           </h2>
-          <button className="mt-6 bg-[#001e8a] text-white  rounded font-medium hover:bg-blue-800 cursor-pointer px-10 py-3  md:text-lg shadow-md  transition-all duration-300">
-            Book Free Strategy Call
-          </button>
+          <div className="mt-6">
+            <CalButton />
+          </div>
         </div>
 
         {/* Right Image */}

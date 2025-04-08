@@ -1,4 +1,5 @@
 import React from "react";
+import CalButton from "./CalButton";
 
 const WantToTalk = () => {
   return (
@@ -16,9 +17,9 @@ const WantToTalk = () => {
         Want to talk about your
         <span className="text-[#E81F38]"> Idea</span>?
       </h2>
-      <button className="bg-[#001e8a] text-white  rounded font-medium hover:bg-blue-800 cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300 mt-6 md:mt-10">
-        Book Free Strategy Call
-      </button>
+      <div className="mt-6 md:mt-10">
+        <CalButton />
+      </div>
     </section>
   );
 };

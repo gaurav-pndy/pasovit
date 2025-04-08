@@ -3,6 +3,7 @@ import WhyUs from "../../components/WhyUs";
 import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
+import CalButtonWhite from "../../components/CalButtonWhite";
 
 const EmailMarketing = () => {
   return (
@@ -26,9 +27,7 @@ const EmailMarketing = () => {
             results.
           </h1>
 
-          <button className="mt-6 bg-white text-[#001e8a]  rounded font-medium hover:bg-[#001e8a] border border-[#001e8a] hover:text-white hover:border-white cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300">
-            Book a Strategy Call
-          </button>
+          <CalButtonWhite />
         </div>
 
         {/* Right Side Illustration */}

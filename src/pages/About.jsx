@@ -1,4 +1,5 @@
 import React from "react";
+import CalButtonWhite from "../components/CalButtonWhite";
 
 const About = () => {
   return (
@@ -25,9 +26,7 @@ const About = () => {
             digital best practices.
           </p>
 
-          <button className="mt-4 bg-white text-[#001e8a]  rounded font-medium hover:bg-[#001e8a] border border-[#001e8a] hover:text-white hover:border-white cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300">
-            Book Free Strategy Call
-          </button>
+          <CalButtonWhite />
         </div>
 
         {/* Right Side Illustration */}

@@ -4,6 +4,7 @@ import WhyUs from "../components/WhyUs";
 import WantToTalk from "../components/WantToTalk";
 import PyramidSection from "../components/PyramidSection";
 import ProcessFlow2 from "../components/ProcessFlow2";
+import CalButtonWhite from "../components/CalButtonWhite";
 
 const services = [
   {
@@ -13,8 +14,7 @@ const services = [
   },
   {
     title: "EMAIL MARKETING",
-    image:
-      "https://www.pasovit.com/wp-content/uploads/2024/08/elementor/thumbs/e-mail-marketing-automation.png", // Replace with actual image path
+    image: "src/assets/email-marketing-1.png", // Replace with actual image path
     link: "/artificial-intelligence/email-marketing-automation",
   },
   {
@@ -67,9 +67,7 @@ const ArtificialIntelligence = () => {
             expertise<span className="text-[#E81F38]">.</span>
           </h1>
 
-          <button className="mt-6 bg-white text-[#001e8a]  rounded font-medium hover:bg-[#001e8a] border border-[#001e8a] hover:text-white hover:border-white cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300">
-            Book Free Strategy Call
-          </button>
+          <CalButtonWhite />
         </div>
 
         {/* Right Side Illustration */}

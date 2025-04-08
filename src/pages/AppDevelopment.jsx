@@ -6,6 +6,7 @@ import Strategy from "../components/Strategy";
 import HowWeWork from "../components/HowWeWork";
 import FAQSection from "../components/FAQSection";
 import WantToTalk from "../components/WantToTalk";
+import CalButtonWhite from "../components/CalButtonWhite";
 
 const services = [
   {
@@ -43,9 +44,7 @@ const AppDevelopment = () => {
             business needs<span className="text-[#E81F38]">.</span>
           </h1>
 
-          <button className="mt-6 bg-white text-[#001e8a]  rounded font-medium hover:bg-[#001e8a] border border-[#001e8a] hover:text-white hover:border-white cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300">
-            Book Free Strategy Call
-          </button>
+          <CalButtonWhite />
         </div>
 
         {/* Right Side Illustration */}
