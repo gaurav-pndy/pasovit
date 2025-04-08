@@ -91,7 +91,7 @@ const services = [
     title: "Traumatology and orthopedics",
     description:
       "Face-to-face and remote consultations. High-tech surgical treatment",
-    image: "/HealthcareImages/PET-CT image.png",
+    image: "/HealthcareImages/Traumatology and orthopedics.png",
     link: "#",
   },
   {
