@@ -14,7 +14,7 @@ const services = [
   },
   {
     title: "EMAIL MARKETING",
-    image: "src/assets/email-marketing-1.png", // Replace with actual image path
+    image: "/email-marketing-1.png", // Replace with actual image path
     link: "/artificial-intelligence/email-marketing-automation",
   },
   {

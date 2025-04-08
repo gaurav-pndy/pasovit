@@ -11,8 +11,7 @@ const services = [
     title: "Individual early diagnosis of diseases",
     description:
       "Comprehensive in-depth examination taking into account risk factors and genetic predisposition to cancer",
-    image:
-      "src/assets/HealthcareImages/Individual early diagnosis of diseases.png",
+    image: "/HealthcareImages/Individual early diagnosis of diseases.png",
     link: "#",
   },
   {
@@ -21,57 +20,56 @@ const services = [
       "Confinement without leaving home; revision of both primary conclusions and conclusions in the process of specific antitumor treatment to assess the dynamics; expert review of cyto- and histological preparations; a large team of pathologists, including foreign experts: the drugs will get to the specialist strictly within the framework of his competence and experience; accessibility for residents of any regions of the Russian Federation and foreign countries; Reply within 5-15 days.",
 
     image:
-      "src/assets/HealthcareImages/Pathomorphological examinations at PathoLogica Service.png",
+      "/HealthcareImages/Pathomorphological examinations at PathoLogica Service.png",
     link: "#",
   },
   {
     title: "Molecular Council",
     description:
       "Discussion by experts of the results of comprehensive genomic sequencing (FoundationOne, OncoAtlas, etc.) for the selection of targeted therapy for cancer",
-    image: "src/assets/HealthcareImages/Molecular Council.png",
+    image: "/HealthcareImages/Molecular Council.png",
     link: "#",
   },
   {
     title: "EXPERT ADVICE",
     description:
       "Face-to-face and remote consultations with surgical oncologists, chemotherapists, radiation therapists",
-    image: "src/assets/HealthcareImages/EXPERT ADVICE.png",
+    image: "/HealthcareImages/EXPERT ADVICE.png",
     link: "#",
   },
   {
     title: "International Tumor Board",
     description:
       "Multidisciplinary team of medical experts. Drawing up an examination and treatment plan",
-    image: "src/assets/HealthcareImages/International Tumor Board.png",
+    image: "/HealthcareImages/International Tumor Board.png",
     link: "#",
   },
   {
     title: "Expert review of CT, MRI, PET-CT",
     description:
       "Revision of test results to obtain a second opinion and clarify the diagnosis",
-    image: "src/assets/HealthcareImages/Expert review of CT, MRI, PET-CT.png",
+    image: "/HealthcareImages/Expert review of CT, MRI, PET-CT.png",
     link: "#",
   },
   {
     title: "PET-CT",
     description:
       "A highly accurate method that allows you to determine the localization of tumor foci when the data of traditional methods of radiation diagnostics (ultrasound, X-ray, MRI and CT) are not enough",
-    image: "src/assets/HealthcareImages/PET-CT.png",
+    image: "/HealthcareImages/PET-CT.png",
 
     link: "#",
   },
   {
     title: "Drug therapy of malignant neoplasms",
     description: "Chemotherapy. Immunotherapy. Targeted therapy",
-    image:
-      "src/assets/HealthcareImages/Drug therapy of malignant neoplasms.png",
+    image: "/HealthcareImages/Drug therapy of malignant neoplasms.png",
     link: "#",
   },
   {
     title: "Oncosurgery",
     description:
       "Gynecologic oncology. Head and neck tumors. Breast cancer. Skin tumors and melanoma. Oncoplastic surgery",
-    image: "src/assets/HealthcareImages/Oncosurgery.png",
+    image: "/HealthcareImages/Oncosurgery.png",
 
     link: "#",
   },
@@ -79,21 +77,21 @@ const services = [
     title: "Medical support",
     description:
       "During the examination. Between courses of chemotherapy. After discharge from the hospital. The supervising doctor is always in touch!",
-    image: "src/assets/HealthcareImages/Medical support.png",
+    image: "/HealthcareImages/Medical support.png",
     link: "#",
   },
   {
     title: "Radiotherapy",
     description:
       "Radiotherapy. Chemoradiotherapy. Stereotactic radiation therapy. Cyberknife. Gamma Knife",
-    image: "src/assets/HealthcareImages/Radiotherapy.png",
+    image: "/HealthcareImages/Radiotherapy.png",
     link: "#",
   },
   {
     title: "Traumatology and orthopedics",
     description:
       "Face-to-face and remote consultations. High-tech surgical treatment",
-    image: "src/assets/HealthcareImages/PET-CT image.png",
+    image: "/HealthcareImages/PET-CT image.png",
     link: "#",
   },
   {

@@ -79,7 +79,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 text-white lg:grid-cols-4 gap-10 mt-12 ">
           <div className="flex flex-col gap-4">
             <div className="h-24 ">
-              <img src="src/assets/chennai.svg" alt="" className="h-full  " />
+              <img src="/chennai.svg" alt="" className="h-full  " />
             </div>
 
             <h5 className="text-[1.4rem] font-[500] ">CHENNAI - IN</h5>
@@ -90,7 +90,7 @@ const Contact = () => {
           </div>
           <div className="flex flex-col gap-4">
             <div className="h-24">
-              <img src="src/assets/delhi.svg" alt="" className="h-full " />
+              <img src="/delhi.svg" alt="" className="h-full " />
             </div>{" "}
             <h5 className="text-[1.4rem] font-[500] ">DELHI - IN</h5>
             <p>
@@ -100,7 +100,7 @@ const Contact = () => {
           </div>
           <div className="flex flex-col gap-4">
             <div className="h-24">
-              <img src="src/assets/moscow.svg" alt="" className="h-full " />
+              <img src="/moscow.svg" alt="" className="h-full " />
             </div>{" "}
             <h5 className="text-[1.4rem] font-[500] ">MOSCOW - RU</h5>
             <p>
@@ -110,7 +110,7 @@ const Contact = () => {
           </div>
           <div className="flex flex-col gap-4">
             <div className="h-24">
-              <img src="src/assets/airdrie.svg" alt="" className="h-full " />
+              <img src="/airdrie.svg" alt="" className="h-full " />
             </div>{" "}
             <h5 className="text-[1.4rem] font-[500] ">AIRDRIE - UK</h5>
             <p>5 Victoria Place, Airdrie, Scotland, United Kingdom - ML6 9BU</p>
