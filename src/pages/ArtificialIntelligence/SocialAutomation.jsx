@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
 const EmailAutomation = () => {
   return (
     <div>
+      <SEO
+        title="Social Media Automation | Pasovit Technologies"
+        description="Automate your social presence with AI tools that schedule, manage, and analyze social media activity."
+        keywords="social media automation, AI social tools, marketing automation, Pasovit social AI"
+        url="https://pasovit.com/artificial-intelligence/sm-automation"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

@@ -1,8 +1,15 @@
 import React from "react";
+import SEO from "../components/SEO";
 
 const Contact = () => {
   return (
     <div>
+      <SEO
+        title="Contact Us | Pasovit Technologies"
+        description="Get in touch with Pasovit Technologies for project inquiries, support, or collaboration opportunities."
+        keywords="Contact Pasovit, get in touch, Pasovit Technologies contact"
+        url="https://pasovit.com/contact"
+      />
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[60vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

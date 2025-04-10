@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
 const SalesAutomation = () => {
   return (
     <div>
+      <SEO
+        title="Sales & eCommerce Automation | Pasovit Technologies"
+        description="Drive more conversions with smart automation tailored for your sales funnels and eCommerce platforms."
+        keywords="sales automation, eCommerce automation, AI for sales, Pasovit automation"
+        url="https://pasovit.com/artificial-intelligence/sales-ecom-automation"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

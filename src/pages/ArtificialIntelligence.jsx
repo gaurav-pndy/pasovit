@@ -5,6 +5,7 @@ import WantToTalk from "../components/WantToTalk";
 import PyramidSection from "../components/PyramidSection";
 import ProcessFlow2 from "../components/ProcessFlow2";
 import CalButtonWhite from "../components/CalButtonWhite";
+import SEO from "../components/SEO";
 
 const services = [
   {
@@ -45,6 +46,13 @@ const services = [
 const ArtificialIntelligence = () => {
   return (
     <div>
+      <SEO
+        title="AI & Automation Services | Pasovit Technologies"
+        description="Automate your business with Pasovit's AI-driven solutions for CRM, sales, email, and social media automation."
+        keywords="AI services, business automation, CRM automation, Pasovit AI solutions"
+        url="https://pasovit.com/artificial-intelligence"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

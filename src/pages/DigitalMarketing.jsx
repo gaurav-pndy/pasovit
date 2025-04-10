@@ -7,6 +7,7 @@ import PyramidSection from "../components/PyramidSection";
 import ProcessFlow2 from "../components/ProcessFlow2";
 import CalButton from "../components/CalButton";
 import CalButtonWhite from "../components/CalButtonWhite";
+import SEO from "../components/SEO";
 
 const services = [
   {
@@ -47,6 +48,13 @@ const services = [
 const DigitalMarketing = () => {
   return (
     <div>
+      <SEO
+        title="Digital Marketing Services | Pasovit Technologies"
+        description="Boost your online presence with Pasovit’s SEO, social media marketing, paid ads, and branding services."
+        keywords="digital marketing, SEO, social media, branding, paid ads"
+        url="https://pasovit.com/digital-marketing"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

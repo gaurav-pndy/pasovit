@@ -1,5 +1,6 @@
 import { desc, title } from "framer-motion/client";
 import React from "react";
+import SEO from "../components/SEO";
 
 const terms = [
   {
@@ -244,6 +245,13 @@ Notwithstanding the foregoing, we reserve the right, at your expense, to assume 
 const TermsOfUse = () => {
   return (
     <div>
+      <SEO
+        title="Terms of Use | Pasovit Technologies"
+        description="Read the terms and conditions of using Pasovit Technologies' website and services."
+        keywords="terms of use, Pasovit terms and conditions, website policy"
+        url="https://pasovit.com/terms"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[60vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

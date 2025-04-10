@@ -5,6 +5,7 @@ import ProcessFlow from "../components/ProcessFlow";
 import WantToTalk from "../components/WantToTalk";
 import PyramidSection from "../components/PyramidSection";
 import ProcessFlow2 from "../components/ProcessFlow2";
+import SEO from "../components/SEO";
 
 const services = [
   {
@@ -105,6 +106,13 @@ const services = [
 const Healthcare = () => {
   return (
     <div>
+      <SEO
+        title="Healthcare Facilitator Services | Pasovit Technologies"
+        description="Connecting patients and providers with seamless healthcare facilitator services powered by technology."
+        keywords="healthcare facilitator, medical services, patient support, Pasovit health"
+        url="https://pasovit.com/healthcare-facilitator"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

@@ -7,6 +7,7 @@ import HowWeWork from "../components/HowWeWork";
 import FAQSection from "../components/FAQSection";
 import WantToTalk from "../components/WantToTalk";
 import CalButtonWhite from "../components/CalButtonWhite";
+import SEO from "../components/SEO";
 
 const services = [
   {
@@ -25,6 +26,13 @@ const services = [
 const AppDevelopment = () => {
   return (
     <div>
+      <SEO
+        title="Application Development | Pasovit Technologies"
+        description="Explore our application development services including custom mobile and web solutions tailored to your business."
+        keywords="app development, mobile development, web development, software solutions"
+        url="https://pasovit.com/application-development"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

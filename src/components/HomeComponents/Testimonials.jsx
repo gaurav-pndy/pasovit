@@ -1,35 +1,120 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import { motion } from "framer-motion";
-import "swiper/css";
+import React, { useEffect, useRef, useState } from "react";
 import { User } from "lucide-react";
 
-const testimonials = [
+const initialTestimonials = [
   {
     id: 1,
-    org: "EAFO",
-    designation: "CEO & FOUNDER",
-    text: '"We conducted a medical-related course event in Russia and hired Pasovit Technologies to develop our website and manage our participants. They did an excellent job! The website was user-friendly and professional, and their management of participant logistics was seamless. We highly recommend Pasovit Technologies for their outstanding service and expertise."',
+    org: "Team EAFO",
+
+    text: '"Pasovit built our award-winning e-learning platform (ui.eafo.info & admin.eafo.info) and high-converting medical event websites, creating a seamless digital education ecosystem. Their custom web development solutions—including course management systems, attendee registration portals, and HD live streaming—have transformed how we deliver accredited medical education online. The event websites, with their intuitive UX and secure payment integration, have boosted conference participation by 40%. A top-tier web design partner for healthcare professionals."',
   },
   {
     id: 2,
-    org: "Space Meditation Center",
-    designation: "FOUNDER",
-    text: '"Space Meditation Center is delighted with the outstanding work Pasovit Technologies did in developing our website. They created a beautiful, user-friendly site that perfectly represents our yoga and meditation services. Their professionalism and attention to detail were impressive. We highly recommend Pasovit Technologies!"',
+    org: "Dr. Soma (Surgical Oncologist, Plastic Surgeon, Founder & CEO, EAFO)",
+
+    text: '"Pasovit crafted a sophisticated multilingual platform for drsoma.info that beautifully showcases our diverse medical initiatives. They demonstrated particular skill in unifying clinical, academic and humanitarian content into a cohesive digital presence. The SEO-optimized design and intuitive CMS have significantly enhanced our global communications and outreach efforts."',
   },
   {
     id: 3,
-    org: "Roy and Roy Associates",
-    designation: "FOUNDER",
-    text: '"ROY AND ROY ASSOCIATES is thrilled with the exceptional work done by Pasovit in creating our website. They delivered a visually appealing, user-friendly site that perfectly reflects our brand. Their attention to detail and responsiveness made the process smooth and enjoyable. Highly recommended!"',
+    org: "Team Aviakul",
+
+    text: `"Pasovit developed an aviation training platform that truly soars. For aviakul.com, they created a dynamic interface that excites prospective students while maintaining professional credibility. Their clever use of visuals and streamlined application process has already improved our conversion rates. The team's enthusiasm for our mission made the collaboration particularly rewarding."`,
+  },
+  {
+    id: 4,
+    org: "Team BeingKind",
+
+    text: `"Pasovit built more than a website for BeingKind - they created a digital sanctuary that reflects our compassionate ethos. Their designers demonstrated remarkable empathy, crafting an interface that comforts visitors while effectively communicating our services. The intuitive structure helps users quickly find the resources they need, exactly as we envisioned."`,
+  },
+  {
+    id: 5,
+    org: "Team Sacreth",
+
+    text: `"Pasovit delivered a streetwear e-commerce site that pulses with urban energy. For Sacreth, they developed a bold visual language that perfectly captures our brand's edge while maintaining flawless functionality. Their innovative product display solutions and seamless checkout process have significantly enhanced our online sales performance."`,
+  },
+  {
+    id: 6,
+    org: "Team Saffron Restaurant",
+
+    text: `"Pasovit’s restaurant website design increased our online reservations by 80% with mouthwatering food photography, OpenTable integration, and localized SEO for 'best fine dining'. Their Google Business Profile optimization helped us dominate local 'date night restaurant' searches."`,
+  },
+  {
+    id: 7,
+    org: "Team Health-Direct",
+
+    text: `"Pasovit's oncology website for health-direct.info strikes the perfect balance between medical authority and patient comfort. Their thoughtful information architecture helps users navigate complex treatment options with confidence. The clean, reassuring design has received praise from both healthcare professionals and patients seeking our specialized services."`,
+  },
+  {
+    id: 7,
+    org: "Team PathoLogica",
+
+    text: `"For pathologica.ru, Pasovit created a medical website that masterfully balances clinical precision with patient-friendly accessibility. Their ability to organize complex diagnostic information into intuitive navigation impressed our entire team. Beyond technical execution, they demonstrated genuine understanding of our mission to make quality oncology diagnostics more accessible to all patients."`,
+  },
+  {
+    id: 7,
+    org: "Team FIRMST",
+
+    text: `"Pasovit translated FIRMST's scientific collaboration vision into a vibrant digital platform. For firmst.tech, they created an engaging interface that stimulates knowledge-sharing across medical disciplines. Their innovative approach to showcasing research events and member contributions has strengthened our community connections."`,
+  },
+  {
+    id: 8,
+    org: "Team FIRMST Study Abroad",
+
+    text: `"Pasovit built an inspiring gateway to global medical education for FIRMST Study Abroad. Their vibrant design and intuitive navigation help students worldwide discover life-changing opportunities. The team's understanding of international education dynamics resulted in a platform that truly serves our mission to develop tomorrow's healthcare leaders."`,
+  },
+  {
+    id: 9,
+    org: "Team ECRC",
+
+    text: `"Pasovit gave ECRC a digital presence worthy of our global cancer research impact. The ecrc.pro website presents complex scientific work with clarity and gravitas. Their strategic content organization helps partners and donors quickly understand our initiatives and contribution to the fight against cancer."`,
+  },
+  {
+    id: 10,
+    org: "Team EGPM",
+
+    text: `"Pasovit transformed our vision into reality with egpm.one, delivering a website that exceeds expectations. Their team's technical expertise and creative problem-solving shone through every phase. We were particularly impressed by their meticulous attention to detail and commitment to understanding our goals. The result? A sleek, high-performance digital platform that perfectly represents our brand identity."`,
+  },
+  {
+    id: 11,
+    org: "Team Remeslo Dobra",
+
+    text: `"Pasovit created a digital home that radiates the warmth of Remeslo Dobra's mission. Their sensitive approach to showcasing our homelessness services has helped more people find assistance. The website's compassionate design and clear call-to-action elements have measurably increased community engagement and volunteer participation."`,
   },
 ];
 
 const Testimonials = () => {
+  const [isPaused, setIsPaused] = useState(false);
+  const scrollRef = useRef(null);
+  const SCROLL_SPEED = 0.5; // px per frame
+
+  // Duplicate testimonials to allow smooth looping
+  const extendedTestimonials = [...initialTestimonials, ...initialTestimonials];
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    let animationId;
+
+    const scroll = () => {
+      if (!isPaused && container) {
+        container.scrollTop += SCROLL_SPEED;
+
+        // Reset scroll when reaching halfway (i.e., start of duplicate)
+        if (container.scrollTop >= container.scrollHeight / 2) {
+          container.scrollTop = 0;
+        }
+      }
+
+      animationId = requestAnimationFrame(scroll);
+    };
+
+    animationId = requestAnimationFrame(scroll);
+
+    return () => cancelAnimationFrame(animationId);
+  }, [isPaused]);
+
   return (
     <section
-      className="mt-4 pt-14 pb-6 px-0 md:px-12.5 bg-left"
+      className="relative py-0 px-0 md:px-12.5 min-h-[70vh] lg:min-h-[40vh] xl:min-h-[80vh] bg-left overflow-hidden"
       style={{
         backgroundImage:
           "url('https://www.pasovit.com/wp-content/uploads/2022/02/testimonials-background-min.png')",
@@ -37,64 +122,45 @@ const Testimonials = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="m-7.5 max-w-5xl mx-auto relative">
-        <div className="text-center">
+      <div className="max-w-7xl flex flex-col lg:flex-row mx-auto relative z-10 ">
+        <div className="text-center lg:text-left flex flex-col justify-center lg:w-[40%] mb-8 py-5 md:mb-0">
           <h3 className="text-white text-xl tracking-[2px]">TESTIMONIALS</h3>
-          <h2 className="text-2xl md:text-3xl tracking-wide lg:text-[2.5rem] text-white font-semibold mt-5">
+          <h2 className="text-4xl md:text-[4rem] font-[900]  md:leading-[4.5rem] tracking-wide  text-white mt-5">
             Voices of our clients
           </h2>
         </div>
 
-        <div className="pt-10 relative testimonial-section overflow-hidden">
+        <div className="lg:w-[60%] h-[70vh] lg:h-[40vh]  xl:h-[80vh] relative testimonial-section ">
           <img
             src="https://t.commonsupport.com/adro/images/resource/user-thumbs.png"
             alt=""
-            className="hidden  sm:block absolute right-2 top-28 w-32 md:w-auto "
+            className="hidden sm:block absolute right-0 top-32 w-32 md:w-auto"
           />
 
-          <Swiper
-            modules={[Autoplay]}
-            autoplay={{ delay: 5000 }}
-            loop
-            slidesPerView={1}
-            grabCursor
-            className="w-full h-full"
+          <div
+            className="w-full md:px-10 h-full overflow-hidden relative flex flex-col items-center z-10 fade-mask"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+            ref={scrollRef}
           >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <div className="h-full max-w-4xl mx-auto w-full flex items-center justify-center px-4 sm:px-8 md:px-12 py-12">
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, ease: "easeInOut" }}
-                    className="bg-white shadow-[0_0_50px_rgba(226,222,232,0.75)] rounded w-full py-10 sm:py-14 px-6 sm:px-12 md:px-20 flex flex-col"
-                  >
-                    <p className="text-base md:text-lg text-[#282331] font-raleway leading-relaxed mb-8 md:mb-10">
-                      {testimonial.text}
-                    </p>
-
-                    <div className="flex items-center gap-4 mt-auto">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center border-4 sm:border-6 border-[#e5e6fa] bg-gray-50 shadow-[0_45px_45px_rgba(147,147,147,0.35)]">
-                        <User className="w-8 h-8 sm:w-12 sm:h-12 text-gray-500" />
-                      </div>
-
-                      <div className="text-left md:py-1 flex flex-col justify-around h-full">
-                        <h4 className="text-lg sm:text-xl font-[700] leading-tight text-[#382c4d] font-raleway">
-                          {testimonial.org}
-                        </h4>
-                        <p className="text-sm sm:text-base text-[#8053f7] font-[400] font-raleway">
-                          {testimonial.designation}
-                        </p>
-                      </div>
-                    </div>
-                  </motion.div>
+            {/* <div className="flex flex-col"> */}
+            {extendedTestimonials.map((item, index) => (
+              <div
+                key={index}
+                className="w-[90%] md:w-[85%] lg:w-[100%] p-4 bg-white shadow-[0_0_30px_rgba(226,222,232,0.75)] mb-10 flex flex-col items-start justify-center rounded-2xl "
+              >
+                <div className="w-16 h-16  rounded-full flex items-center justify-center border-4 sm:border-6 border-[#e5e6fa] bg-gray-50 shadow-[0_15px_15px_rgba(147,147,147,0.3)] mb-2">
+                  <User className="w-8 h-8  text-gray-500" />
                 </div>
-              </SwiperSlide>
+
+                <h3 className="font-bold text-lg text-blue-800">{item.org}</h3>
+                <p className="text-gray-700 italic mt-2">{item.text}</p>
+              </div>
             ))}
-          </Swiper>
+          </div>
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 };

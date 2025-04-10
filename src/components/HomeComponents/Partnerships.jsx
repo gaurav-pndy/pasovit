@@ -1,7 +1,4 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+import Marquee from "react-fast-marquee";
 
 const partners = [
   {
@@ -32,12 +29,21 @@ const partners = [
     src: "https://www.pasovit.com/wp-content/uploads/2022/04/maindoc.png",
     title: "MeinDoc",
   },
+  {
+    src: "https://www.pasovit.com/wp-content/uploads/2022/04/eafo.png",
+    title: "Eurasian Federation of Oncology",
+  },
 ];
 
 const Partnerships = () => {
+  // Split into 2 rows
+  const half = Math.ceil(partners.length / 2);
+  const topRow = partners.slice(0, half);
+  const bottomRow = partners.slice(half);
+
   return (
     <section className="w-full mt-10 lg:mt-5 py-12 bg-white">
-      <div className="container mx-auto max-w-6xl px-8 ">
+      <div className="container mx-auto max-w-6xl md:px-8">
         <div className="md:pl-6 text-center lg:text-left">
           <p className="text-[#E81F38] text-xl tracking-[2px] uppercase">
             Our Bond
@@ -46,36 +52,46 @@ const Partnerships = () => {
             It’s all about our <br className="hidden md:block" /> Partnership
           </h2>
         </div>
-        <div className="mt-6 md:mt-10 overflow-hidden">
-          <Swiper
-            modules={[Navigation, Autoplay]}
-            autoplay={{ delay: 2500 }}
-            loop
-            slidesPerView={1}
-            breakpoints={{
-              640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-            className="w-full flex items-center"
-          >
-            {partners.map((image, index) => (
-              <SwiperSlide
-                key={index}
-                className="flex  min-h-40 border-yellow-500 justify-center items-center"
+
+        {/* Top Row */}
+        <div className="mt-10">
+          <Marquee speed={50} gradient={false} pauseOnHover={true}>
+            {topRow.map((partner, index) => (
+              <div
+                key={`top-${index}`}
+                className="flex items-center justify-center md:mx-4 max-w-60 h-24 px-4 py-2 "
               >
-                <div className="h-40 relative">
-                  <img
-                    src={image.src}
-                    alt={`Partner ${index + 1}`}
-                    className="w-full h-full object-contain"
-                  />
-                  <span className="text-[#8C8C8C] text-lg tracking-[1px] absolute bottom-3 w-full text-center">
-                    {image.title}
-                  </span>
-                </div>
-              </SwiperSlide>
+                <img
+                  src={partner.src}
+                  alt={partner.title || `Partner ${index + 1}`}
+                  className="w-full  h-10 object-cover "
+                />
+              </div>
             ))}
-          </Swiper>
+          </Marquee>
+        </div>
+
+        {/* Bottom Row */}
+        <div className="mt-6">
+          <Marquee
+            speed={50}
+            gradient={false}
+            pauseOnHover={true}
+            direction="right"
+          >
+            {bottomRow.map((partner, index) => (
+              <div
+                key={`bottom-${index}`}
+                className="flex items-center justify-center md:mx-4 max-w-60 px-4 py-2 h-20 overflow-y-hidden "
+              >
+                <img
+                  src={partner.src}
+                  alt={partner.title || `Partner ${index + 1}`}
+                  className="w-full  object-contain"
+                />
+              </div>
+            ))}
+          </Marquee>
         </div>
       </div>
     </section>

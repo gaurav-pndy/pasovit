@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
 const FBInstaAds = () => {
   return (
     <div>
+      <SEO
+        title="Facebook & Instagram Ads Services | Pasovit Technologies"
+        description="Reach your audience effectively with high-converting ad campaigns on Facebook and Instagram."
+        keywords="Facebook ads, Instagram ads, social media ads, digital advertising, Pasovit marketing"
+        url="https://pasovit.com/digital-marketing/fb-instagram-ads-service"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

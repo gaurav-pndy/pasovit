@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
-const SEO = () => {
+const SEOService = () => {
   return (
     <div>
+      <SEO
+        title="SEO Services | Pasovit Technologies"
+        description="Improve your website's visibility, ranking, and traffic with our expert SEO strategies."
+        keywords="SEO services, search engine optimization, keyword ranking, Pasovit SEO, organic traffic"
+        url="https://pasovit.com/digital-marketing/seo-service"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
@@ -90,4 +98,4 @@ const SEO = () => {
   );
 };
 
-export default SEO;
+export default SEOService;

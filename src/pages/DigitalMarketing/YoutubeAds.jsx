@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
 const YoutubeAds = () => {
   return (
     <div>
+      <SEO
+        title="YouTube Ads Services | Pasovit Technologies"
+        description="Get noticed with compelling video ads on YouTube that convert viewers into customers."
+        keywords="YouTube ads, video marketing, video advertising, digital video ads, Pasovit YouTube marketing"
+        url="https://pasovit.com/digital-marketing/youtube-ads-service"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

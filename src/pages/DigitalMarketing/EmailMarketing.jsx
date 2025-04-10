@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
 const EmailMarketing = () => {
   return (
     <div>
+      <SEO
+        title="Email Marketing Services | Pasovit Technologies"
+        description="Drive customer engagement and retention with targeted and personalized email campaigns."
+        keywords="email marketing, email campaigns, lead nurturing, Pasovit marketing, email automation"
+        url="https://pasovit.com/digital-marketing/email-marketing-service"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
 const GoogleAdsense = () => {
   return (
     <div>
+      <SEO
+        title="Google Ads Services | Pasovit Technologies"
+        description="Boost your online visibility and drive sales with data-driven Google Ads campaigns."
+        keywords="Google ads, PPC marketing, search ads, paid traffic, Pasovit Google advertising"
+        url="https://pasovit.com/digital-marketing/google-ads-service"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

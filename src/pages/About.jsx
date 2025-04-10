@@ -1,9 +1,17 @@
 import React from "react";
 import CalButtonWhite from "../components/CalButtonWhite";
+import SEO from "../components/SEO";
 
 const About = () => {
   return (
     <div>
+      <SEO
+        title="About | Pasovit Technologies"
+        description="Learn about Pasovit Technologies – our journey, vision, and the people behind our success."
+        keywords="About Pasovit, company info, web development team, Pasovit Technologies"
+        url="https://pasovit.com/about"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

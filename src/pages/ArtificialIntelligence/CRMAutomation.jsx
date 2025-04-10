@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
 const CRMAutomation = () => {
   return (
     <div>
+      <SEO
+        title="CRM Automation | Pasovit Technologies"
+        description="Streamline your sales and customer relationships with AI-powered CRM automation tools."
+        keywords="CRM automation, customer relationship management, AI CRM, sales automation, Pasovit AI"
+        url="https://pasovit.com/artificial-intelligence/crm-automation"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

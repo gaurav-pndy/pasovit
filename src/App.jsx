@@ -15,13 +15,14 @@ import EmailMarketing from "./pages/DigitalMarketing/EmailMarketing";
 import FBInstaAds from "./pages/DigitalMarketing/FBInstaAds";
 import GoogleAdsense from "./pages/DigitalMarketing/GoogleAdsense";
 import LogoDesign from "./pages/DigitalMarketing/LogoDesign";
-import SEO from "./pages/DigitalMarketing/SEO";
 import TermsOfUse from "./pages/TermsOfUse";
 import Privacy from "./pages/Privacy";
 import YoutubeAds from "./pages/DigitalMarketing/YoutubeAds";
 import Healthcare from "./pages/Healthcare";
 import Home from "./pages/Home";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import SEOService from "./pages/DigitalMarketing/SEOService";
 
 function App() {
   const router = createBrowserRouter([
@@ -94,7 +95,7 @@ function App() {
         },
         {
           path: "/digital-marketing/seo-service/",
-          element: <SEO />,
+          element: <SEOService />,
         },
         {
           path: "/digital-marketing/email-marketing-service/",
@@ -120,9 +121,9 @@ function App() {
     },
   ]);
   return (
-    <>
+    <HelmetProvider>
       <RouterProvider router={router} />
-    </>
+    </HelmetProvider>
   );
 }
 

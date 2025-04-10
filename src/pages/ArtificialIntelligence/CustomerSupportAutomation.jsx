@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
 const CustomerSupportAutomation = () => {
   return (
     <div>
+      <SEO
+        title="Customer Support Automation | Pasovit Technologies"
+        description="Deliver fast, 24/7 customer support using intelligent automation and AI-driven tools."
+        keywords="customer support automation, AI support, helpdesk automation, Pasovit support AI"
+        url="https://pasovit.com/artificial-intelligence/customer-support-automation"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

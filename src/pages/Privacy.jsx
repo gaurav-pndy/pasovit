@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../components/SEO";
 
 const contents = [
   {
@@ -297,6 +298,13 @@ const scrollToSection = (id, offset = 100) => {
 const Privacy = () => {
   return (
     <div>
+      <SEO
+        title="Privacy Policy | Pasovit Technologies"
+        description="Understand how Pasovit Technologies collects, uses, and protects your personal information."
+        keywords="privacy policy, data protection, user data, Pasovit privacy"
+        url="https://pasovit.com/privacy"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[60vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

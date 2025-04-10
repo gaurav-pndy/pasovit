@@ -14,8 +14,8 @@
 
 .testimonial-section:before {
     position: absolute;
-    left: -200px;
-    top: 20%;
+    left: -250px;
+    top: 35%;
     background-image: url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -49,3 +49,15 @@
     background-position: center left;
    } */
 }
+
+
+
+  .fade-mask {
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%);
+    mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+  

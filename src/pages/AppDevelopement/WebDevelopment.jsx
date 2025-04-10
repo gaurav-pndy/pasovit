@@ -4,10 +4,18 @@ import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
 import CalButtonWhite from "../../components/CalButtonWhite";
+import SEO from "../../components/SEO";
 
 const WebDevelopment = () => {
   return (
     <div>
+      <SEO
+        title="Website & Web App Development | Pasovit Technologies"
+        description="Build fast, scalable, and engaging websites and web apps tailored to your business needs."
+        keywords="web development, web app development, custom websites, Pasovit web solutions"
+        url="https://pasovit.com/application-development/web-development"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{

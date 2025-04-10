@@ -3,10 +3,18 @@ import WhyUs from "../../components/WhyUs";
 import PyramidSection from "../../components/PyramidSection";
 import ProcessFlow2 from "../../components/ProcessFlow2";
 import WantToTalk from "../../components/WantToTalk";
+import SEO from "../../components/SEO";
 
 const LogoDesign = () => {
   return (
     <div>
+      <SEO
+        title="Logo Design Services | Pasovit Technologies"
+        description="Create memorable brand identities with our professional and creative logo design services."
+        keywords="logo design, brand identity, custom logo, graphic design, Pasovit branding"
+        url="https://pasovit.com/digital-marketing/logo-design-service"
+      />
+
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
