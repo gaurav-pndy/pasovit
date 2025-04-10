@@ -47,9 +47,9 @@ const Contact = () => {
       </section>
       <section className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[60vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 my-20">
         <div className="md:pl-20 text-center lg:text-left">
-          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
+          {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             CONSULTATION
-          </p>
+          </p> */}
           <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">
             Let's catch the initial{" "}
             <span className="text-[#E81F38]">Spark!</span>
@@ -78,7 +78,7 @@ const Contact = () => {
         }}
       >
         {/* Left Side Content */}
-        <p className="text-white text-xl  tracking-[2px] uppercase">SPOT US</p>
+        {/* <p className="text-white text-xl  tracking-[2px] uppercase">SPOT US</p> */}
         <h1 className="text-3xl tracking-wide md:text-[2.5rem] font-[500] leading-10 text-white  mt-4">
           Our offices around <br className="hidden md:block" /> the world
         </h1>

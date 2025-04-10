@@ -124,7 +124,7 @@ const Testimonials = () => {
     >
       <div className="max-w-7xl flex flex-col lg:flex-row mx-auto relative z-10 ">
         <div className="text-center lg:text-left flex flex-col justify-center lg:w-[40%] mb-8 py-5 md:mb-0">
-          <h3 className="text-white text-xl tracking-[2px]">TESTIMONIALS</h3>
+          {/* <h3 className="text-white text-xl tracking-[2px]">TESTIMONIALS</h3> */}
           <h2 className="text-4xl md:text-[4rem] font-[900]  md:leading-[4.5rem] tracking-wide  text-white mt-5">
             Voices of our clients
           </h2>

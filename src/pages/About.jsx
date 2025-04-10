@@ -49,9 +49,9 @@ const About = () => {
 
       <section className="max-w-6xl mx-auto my-20 ">
         <div className="md:pl-6 text-center">
-          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
+          {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             KNOW US
-          </p>
+          </p> */}
           <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">
             More than just a Software house
           </h2>
@@ -87,7 +87,7 @@ const About = () => {
       >
         {/* Left Side Content */}
         <div className="lg:w-1/2 text-center lg:text-left lg:pl-20">
-          <p className="text-white text-xl  tracking-[2px] uppercase">BELIEF</p>
+          {/* <p className="text-white text-xl  tracking-[2px] uppercase">BELIEF</p> */}
           <h1 className="text-4xl md:text-5xl text-white font-[500] leading-tight mt-4">
             We are what we Believe in
           </h1>
@@ -113,9 +113,9 @@ const About = () => {
 
       <section className="max-w-6xl mx-auto my-20 ">
         <div className="md:pl-6 text-center">
-          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
+          {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             WORK
-          </p>
+          </p> */}
           <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">
             How we work
           </h2>

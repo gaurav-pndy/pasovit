@@ -18,7 +18,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#001e8a] text-white mt-20 py-10">
+    <footer className="bg-[#001e8a] text-white mt-20 pt-10">
       <div className=" mx-auto px-5 md:px-8 grid lg:grid-cols-[0.6fr_1.2fr_auto]  xl:grid-cols-[1fr_1.5fr_auto] gap-8 md:gap-10 ">
         {/* Left Section - Logo & Socials */}
         <div>
@@ -73,7 +73,7 @@ export default function Footer() {
               <FaInstagram className="" size={24} />
             </Link>
             <Link
-              to="https://wa.me/919871819993"
+              to="http://wa.me/917042004038"
               target="_blank"
               className="bg-white hover:scale-110 transition-all duration-300 hover:bg-[#e91f38] hover:text-white p-2 rounded shadow-md"
             >

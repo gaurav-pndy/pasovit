@@ -6,6 +6,7 @@ import WantToTalk from "../components/WantToTalk";
 import PyramidSection from "../components/PyramidSection";
 import ProcessFlow2 from "../components/ProcessFlow2";
 import SEO from "../components/SEO";
+import CalButtonWhite from "../components/CalButtonWhite";
 
 const services = [
   {
@@ -132,9 +133,10 @@ const Healthcare = () => {
             our expertise<span className="text-[#E81F38]">.</span>
           </h1>
 
-          <button className="mt-6 bg-white text-[#001e8a]  rounded font-medium hover:bg-[#001e8a] border border-[#001e8a] hover:text-white hover:border-white cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300">
+          {/* <button className="mt-6 bg-white text-[#001e8a]  rounded font-medium hover:bg-[#001e8a] border border-[#001e8a] hover:text-white hover:border-white cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300">
             Get a proposal
-          </button>
+          </button> */}
+          <CalButtonWhite buttonText="Get a proposal" />
         </div>
 
         {/* Right Side Illustration */}
@@ -149,9 +151,9 @@ const Healthcare = () => {
 
       <section className="py-16 px-6  max-w-6xl mx-auto">
         <div className="md:pl-4 text-center lg:text-left">
-          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
+          {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             healthcare{" "}
-          </p>
+          </p> */}
           <h2 className="text-3xl md:text-[2.5rem] tracking-wide font-[500] leading-10 text-[#262626] mt-4">
             Healthcare services <br className="hidden lg:block" /> we provide
           </h2>
@@ -194,9 +196,9 @@ const Healthcare = () => {
       <PyramidSection />
       <section className="max-w-6xl mx-auto mt-20 mb-4">
         <div className="md:pl-6 text-center">
-          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
+          {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             A READ
-          </p>
+          </p> */}
           <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">
             Our Customer philosophy
           </h2>
@@ -205,7 +207,7 @@ const Healthcare = () => {
             We step right into your shoes and look into the problem right from
             your perspective. This makes us to better understand what you want
             without you asking for it. That’s our core philosophy towards
-            understaning our customers
+            understanding our customers.
           </p>
         </div>
       </section>

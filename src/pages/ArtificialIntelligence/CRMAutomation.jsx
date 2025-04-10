@@ -86,9 +86,9 @@ const CRMAutomation = () => {
 
       <section className="max-w-6xl mx-auto mt-20 mb-4">
         <div className="md:pl-6 text-center">
-          <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
+          {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             A READ
-          </p>
+          </p> */}
           <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">
             Our Customer philosophy
           </h2>
@@ -97,7 +97,7 @@ const CRMAutomation = () => {
             We step right into your shoes and look into the problem right from
             your perspective. This makes us to better understand what you want
             without you asking for it. That’s our core philosophy towards
-            understaning our customers
+            understanding our customers.
           </p>
         </div>
       </section>
