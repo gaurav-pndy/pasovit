@@ -286,7 +286,7 @@ const TermsOfUse = () => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto mt-20">
+      <section className="max-w-6xl mx-auto mt-20 px-4">
         <p className="text-lg font-[600] text-[#001E8A]">
           Last updated on 31 July 2024
         </p>

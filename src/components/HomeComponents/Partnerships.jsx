@@ -42,9 +42,9 @@ const Partnerships = () => {
   const bottomRow = partners.slice(half);
 
   return (
-    <section className="w-full mt-10 lg:mt-5 py-12 bg-white">
+    <section className="w-full mt-10 lg:mt-5 py-12 bg-white ">
       <div className="container mx-auto max-w-6xl md:px-8">
-        <div className="md:pl-6 text-center lg:text-left">
+        <div className="md:pl-6 text-center lg:text-left px-4 md:px-0">
           {/* <p className="text-[#E81F38] text-xl tracking-[2px] uppercase">
             Our Bond
           </p> */}

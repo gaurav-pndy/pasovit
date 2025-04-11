@@ -47,7 +47,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto my-20 ">
+      <section className="max-w-6xl mx-auto my-20 px-4">
         <div className="md:pl-6 text-center">
           {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             KNOW US
@@ -111,7 +111,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto my-20 ">
+      <section className="max-w-6xl mx-auto my-20 px-4">
         <div className="md:pl-6 text-center">
           {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             WORK
@@ -135,7 +135,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="max-w-5xl flex flex-col items-center mx-auto my-20 ">
+      <section className="max-w-5xl flex flex-col items-center mx-auto my-20 px-4">
         <img
           src="https://www.pasovit.com/wp-content/uploads/2022/02/pasovit-teamwork.svg"
           alt=""
@@ -147,7 +147,7 @@ const About = () => {
       </section>
 
       <section
-        className="flex max-w-6xl flex-col items-center h-56 md:h-80 xl:h-[50vh]  justify-center mx-auto mt-28"
+        className="flex max-w-6xl flex-col items-center h-56 md:h-80 xl:h-[50vh]  justify-center mx-auto mt-28 px-4"
         style={{
           backgroundImage:
             "url(https://www.pasovit.com/wp-content/uploads/2022/02/map-bg-min.png)",

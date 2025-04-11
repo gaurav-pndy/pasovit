@@ -48,7 +48,7 @@ const CustomerSupportAutomation = () => {
         </div>
       </section>
 
-      <section className="text-[#4b4f58] max-w-5xl mt-20 mx-auto">
+      <section className="text-[#4b4f58] max-w-5xl mt-20 mx-auto px-4">
         <h3 className="text-[#3a3a3a] text-3xl font-[600]">Chatbots:</h3>
         <p className="mt-5">
           Enhance your customer support with our AI-powered chatbots, designed
@@ -90,10 +90,10 @@ const CustomerSupportAutomation = () => {
           {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             A READ
           </p> */}
-          <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">
+          <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4 px-4">
             Our Customer philosophy
           </h2>
-          <p className="text-[#728390] mt-6 md:mt-10">
+          <p className="text-[#728390] mt-6 md:mt-10 px-4">
             There is no better way to understand someone than showing empathy.
             We step right into your shoes and look into the problem right from
             your perspective. This makes us to better understand what you want

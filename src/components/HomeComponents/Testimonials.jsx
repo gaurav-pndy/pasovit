@@ -84,7 +84,7 @@ const Testimonials = () => {
   const [isPaused, setIsPaused] = useState(false);
   const containerRef = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const SCROLL_AMOUNT = 1; // px per frame
+  const SCROLL_AMOUNT = 0.6; // px per frame
 
   // Duplicate testimonials to create the illusion of infinite scrolling
   const extendedTestimonials = [...initialTestimonials, ...initialTestimonials];
