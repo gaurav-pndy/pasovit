@@ -23,8 +23,12 @@ import Home from "./pages/Home";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import SEOService from "./pages/DigitalMarketing/SEOService";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   const router = createBrowserRouter([
     {
       element: <AppLayout />,
