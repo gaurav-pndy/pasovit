@@ -20,7 +20,7 @@ export default function ProcessFlow2() {
         {/* Right Image */}
         <div className="w-full hidden md:block md:px-8">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/consultation-process.svg" // replace with actual image path
+            src="/process-flow-2.png" // replace with actual image path
             alt="Why Choose Us Illustration"
             className="h-full max-w-6xl  w-full mx-auto"
           />
