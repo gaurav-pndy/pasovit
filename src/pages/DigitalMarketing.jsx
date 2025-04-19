@@ -12,35 +12,32 @@ import SEO from "../components/SEO";
 const services = [
   {
     title: "LOGO DESIGN",
-    image:
-      "https://www.pasovit.com/wp-content/uploads/2024/08/logo-design-2.png", // Replace with actual image path
+    image: "/DigitalMarketing/logo-design-2.png", // Replace with actual image path
     link: "/digital-marketing/logo-design-service",
   },
   {
     title: "FACEBOOK & INSTAGRAM ADS",
-    image:
-      "https://www.pasovit.com/wp-content/uploads/2024/08/fbinsta-ad-1.png", // Replace with actual image path
+    image: "/DigitalMarketing/fbinsta-ad-1.png", // Replace with actual image path
     link: "/digital-marketing/fb-instagram-ads-service/",
   },
   {
     title: "GOOGLE ADSENSE",
-    image: "https://www.pasovit.com/wp-content/uploads/2024/08/google-ads.png", // Replace with actual image path
+    image: "/DigitalMarketing/google-ads.png", // Replace with actual image path
     link: "/digital-marketing/google-ads-service/",
   },
   {
     title: "SEARCH ENGINE OPTIMIZATION",
-    image: "https://www.pasovit.com/wp-content/uploads/2024/08/seo.png", // Replace with actual image path
+    image: "/DigitalMarketing/seo.png", // Replace with actual image path
     link: "/digital-marketing/seo-service/",
   },
   {
     title: "EMAIL MARKETING",
-    image:
-      "https://www.pasovit.com/wp-content/uploads/2024/08/email-marketing-2.png", // Replace with actual image path
+    image: "/DigitalMarketing/email-marketing-2.png", // Replace with actual image path
     link: "/digital-marketing/email-marketing-service/",
   },
   {
     title: "YOUTUBE ADS",
-    image: "https://www.pasovit.com/wp-content/uploads/2024/08/youtube-ads.png", // Replace with actual image path
+    image: "/DigitalMarketing/youtube-ads.png", // Replace with actual image path
     link: "/digital-marketing/youtube-ads-service/",
   },
 ];
@@ -58,8 +55,7 @@ const DigitalMarketing = () => {
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/contact-header-bg-min.png')",
+          backgroundImage: "url('/contact-header-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center left",
@@ -83,7 +79,7 @@ const DigitalMarketing = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/professional-hero-image.svg"
+            src="/DigitalMarketing/professional-hero-image.svg"
             alt="Digital Marketing Illustration"
             className="w-64 max-w-md md:w-96 "
           />
@@ -126,7 +122,7 @@ const DigitalMarketing = () => {
       </section>
 
       <img
-        src="https://www.pasovit.com/wp-content/uploads/2022/02/divider-line-min-2048x35.png"
+        src="/divider-line-min-2048x35.png"
         alt=""
         className="h-full max-w-6xl md:my-5 w-full mx-auto"
       />
@@ -134,7 +130,7 @@ const DigitalMarketing = () => {
       <WhyUs />
 
       <img
-        src="https://www.pasovit.com/wp-content/uploads/2022/02/divider-line-min-2048x35.png"
+        src="/divider-line-min-2048x35.png"
         alt=""
         className="h-full max-w-6xl md:my-5 w-full mx-auto"
       />
@@ -147,7 +143,7 @@ const DigitalMarketing = () => {
           playsInline
         >
           <source
-            src="https://www.pasovit.com/wp-content/uploads/2024/08/Pasovit-Trinity-AI.mp4"
+            src="/DigitalMarketing/Pasovit-Trinity-AI.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.

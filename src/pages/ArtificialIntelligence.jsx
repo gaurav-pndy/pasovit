@@ -10,35 +10,32 @@ import SEO from "../components/SEO";
 const services = [
   {
     title: "AI CHAT BOTS",
-    image: "https://www.pasovit.com/wp-content/uploads/2024/08/ai-chat-bot.png", // Replace with actual image path
+    image: "/AI/ai-chat-bot.png", // Replace with actual image path
     link: "#",
   },
   {
     title: "EMAIL MARKETING",
-    image: "/email-marketing-1.png", // Replace with actual image path
+    image: "/AI/email-marketing-1.png", // Replace with actual image path
     link: "/artificial-intelligence/email-marketing-automation",
   },
   {
     title: "CUSTOMER RELATIONSHIP MANAGEMENT (CRM) AUTOMATION",
-    image:
-      "https://www.pasovit.com/wp-content/uploads/2024/08/crm-automation-1.png", // Replace with actual image path
+    image: "/AI/crm-automation-1.png", // Replace with actual image path
     link: "/artificial-intelligence/crm-automation",
   },
   {
     title: "SOCIAL MEDIA AUTOMATION",
-    image:
-      "https://www.pasovit.com/wp-content/uploads/2024/08/social-media-automation-2.png", // Replace with actual image path
+    image: "/AI/social-media-automation-2.png", // Replace with actual image path
     link: "/artificial-intelligence/sm-automation",
   },
   {
     title: "SALES & E-COMMERCE AUTOMATION",
-    image: "https://www.pasovit.com/wp-content/uploads/2024/08/sales.png", // Replace with actual image path
+    image: "/AI/sales.png", // Replace with actual image path
     link: "/artificial-intelligence/sales-ecom-automation",
   },
   {
     title: "CUSTOMER SUPPORT AUTOMATION",
-    image:
-      "https://www.pasovit.com/wp-content/uploads/2024/08/coustomer-support-automation-1.png", // Replace with actual image path
+    image: "/AI/coustomer-support-automation-1.png", // Replace with actual image path
     link: "/artificial-intelligence/customer-support-automation",
   },
 ];
@@ -56,8 +53,7 @@ const ArtificialIntelligence = () => {
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/contact-header-bg-min.png')",
+          backgroundImage: "url('/contact-header-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center left",
@@ -81,7 +77,7 @@ const ArtificialIntelligence = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/consultation-services-heroimage.svg"
+            src="/AI/consultation-services-heroimage.svg"
             alt="Rocket Illustration"
             className="w-64 max-w-md md:w-96 "
           />
@@ -124,7 +120,7 @@ const ArtificialIntelligence = () => {
       </section>
 
       <img
-        src="https://www.pasovit.com/wp-content/uploads/2022/02/divider-line-min-2048x35.png"
+        src="/divider-line-min-2048x35.png"
         alt=""
         className="h-full max-w-6xl md:my-5 w-full mx-auto"
       />

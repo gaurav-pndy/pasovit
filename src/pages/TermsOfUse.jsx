@@ -255,8 +255,7 @@ const TermsOfUse = () => {
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[60vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/contact-header-bg-min.png')",
+          backgroundImage: "url('/contact-header-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center left",

@@ -5,8 +5,7 @@ export default function Hero() {
     <section
       className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[calc(100vh-6rem)] gap-20  px-8 md:px-16 xl:px-32 py-16 "
       style={{
-        backgroundImage:
-          "url('https://www.pasovit.com/wp-content/uploads/2022/02/Hero-background-min.png')",
+        backgroundImage: "url('/home/Hero-background-min.png')",
         backgroundSize: "cover",
       }}
     >
@@ -29,7 +28,7 @@ export default function Hero() {
       {/* Right Side Illustration */}
       <div className="lg:w-1/2 flex justify-center">
         <img
-          src="https://www.pasovit.com/wp-content/uploads/2022/02/Asset-6.svg"
+          src="/home/Asset-6.svg"
           alt="Rocket Illustration"
           className="w-full max-w-md md:max-w-5xl scale-110"
         />

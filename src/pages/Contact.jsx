@@ -13,8 +13,7 @@ const Contact = () => {
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[60vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/contact-header-bg-min.png')",
+          backgroundImage: "url('/contact-header-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center left",
@@ -39,7 +38,7 @@ const Contact = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/contact.svg"
+            src="/contact/contact.svg"
             alt="Contact Illustration"
             className="w-64 max-w-md md:w-90 "
           />
@@ -61,7 +60,7 @@ const Contact = () => {
 
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/contact-P.svg"
+            src="/contact/contact-P.svg"
             alt="Pasovit Illustration"
             className="w-64 max-w-md md:w-96 "
           />
@@ -70,8 +69,7 @@ const Contact = () => {
       <section
         className="relative  .contact-places-bg  xl:h-[70vh]   px-8 md:px-16 xl:px-48 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/address-bg-min.png')",
+          backgroundImage: "url('/contact/address-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           // backgroundPosition: "top right",
@@ -129,8 +127,7 @@ const Contact = () => {
       <section
         className="flex max-w-6xl flex-col items-center h-56 md:h-80 xl:h-[50vh]  justify-center mx-auto mt-28"
         style={{
-          backgroundImage:
-            "url(https://www.pasovit.com/wp-content/uploads/2022/02/map-bg-min.png)",
+          backgroundImage: "url(/common/map-bg-min.png)",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",

@@ -3,8 +3,7 @@ export default function AboutSection() {
     <section
       className="relative flex flex-col items-center text-center py-20 md:pb-52 px-6 md:px-12 about-bg"
       style={{
-        backgroundImage:
-          "url('https://www.pasovit.com/wp-content/uploads/2022/02/pasovit-about-image.svg')",
+        backgroundImage: "url('/home/pasovit-about-image.svg')",
         backgroundPosition: "bottom center",
         backgroundRepeat: "no-repeat",
         // backgroundSize: "contain",

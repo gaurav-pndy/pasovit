@@ -2,35 +2,35 @@ import Marquee from "react-fast-marquee";
 
 const partners = [
   {
-    src: "https://www.pasovit.com/wp-content/uploads/2022/04/ecrc.png",
+    src: "/home/logos/ecrc.png",
     title: "Eurasian Cancer Research Council",
   },
   {
-    src: "https://www.pasovit.com/wp-content/uploads/2022/04/Health-direct.png",
+    src: "/home/logos/Health-direct.png",
     title: "HEALTH DIRECT",
   },
   {
-    src: "https://www.pasovit.com/wp-content/uploads/2022/04/pathologica.png",
+    src: "/home/logos/pathologica.png",
     title: "PATHOLOGICA",
   },
   {
-    src: "https://www.pasovit.com/wp-content/uploads/2022/04/eafo.png",
+    src: "/home/logos/eafo.png",
     title: "Eurasian Federation of Oncology",
   },
   {
-    src: "https://www.pasovit.com/wp-content/uploads/2024/08/Black-Logo.png",
+    src: "/home/logos/Black-Logo.png",
     title: "",
   },
   {
-    src: "https://www.pasovit.com/wp-content/uploads/2022/04/aviakul.png",
+    src: "/home/logos/aviakul.png",
     title: "Aviakul Aviation Academy",
   },
   {
-    src: "https://www.pasovit.com/wp-content/uploads/2022/04/maindoc.png",
+    src: "/home/logos/maindoc.png",
     title: "MeinDoc",
   },
   {
-    src: "https://www.pasovit.com/wp-content/uploads/2022/04/eafo.png",
+    src: "/home/logos/eafo.png",
     title: "Eurasian Federation of Oncology",
   },
 ];

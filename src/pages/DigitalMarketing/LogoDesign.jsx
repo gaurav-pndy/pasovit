@@ -18,8 +18,7 @@ const LogoDesign = () => {
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/contact-header-bg-min.png')",
+          backgroundImage: "url('/contact-header-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center left",
@@ -43,7 +42,7 @@ const LogoDesign = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-[40%] flex justify-center">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2024/08/logo-design-svg.png"
+            src="/DigitalMarketing/logo-design-svg.png"
             alt="Logo Design Illustration"
             className="w-64 max-w-md md:w-[30rem] "
           />
@@ -67,7 +66,7 @@ const LogoDesign = () => {
       </section>
 
       <img
-        src="https://www.pasovit.com/wp-content/uploads/2022/02/divider-line-min-2048x35.png"
+        src="/divider-line-min-2048x35.png"
         alt=""
         className="h-full max-w-6xl my-5 w-full mx-auto"
       />

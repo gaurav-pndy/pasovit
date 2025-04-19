@@ -20,7 +20,7 @@ const CTASection = () => {
         {/* Right Image */}
         <div className="w-full max-w-2xl">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/lets-talk-idea.svg"
+            src="/home/lets-talk-idea.svg"
             alt="CTA Illustration"
             className="w-[50rem] object-contain"
           />

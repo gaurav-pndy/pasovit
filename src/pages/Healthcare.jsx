@@ -117,8 +117,7 @@ const Healthcare = () => {
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/contact-header-bg-min.png')",
+          backgroundImage: "url('/contact-header-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center left",
@@ -142,7 +141,7 @@ const Healthcare = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/elementor/thumbs/Health-professional-team-amico-qou8bsot106pwwwum35xywusfyegolro292a620hpc.png"
+            src="/HealthcareImages/Health-professional-team-amico-qou8bsot106pwwwum35xywusfyegolro292a620hpc.png"
             alt="Rocket Illustration"
             className="w-64 max-w-md md:w-96 "
           />
@@ -187,7 +186,7 @@ const Healthcare = () => {
       </section>
 
       <img
-        src="https://www.pasovit.com/wp-content/uploads/2022/02/divider-line-min-2048x35.png"
+        src="/divider-line-min-2048x35.png"
         alt=""
         className="h-full max-w-6xl md:my-5 w-full mx-auto"
       />
@@ -212,7 +211,7 @@ const Healthcare = () => {
         </div>
       </section>
       <img
-        src="https://www.pasovit.com/wp-content/uploads/2022/02/divider-line-min-2048x35.png"
+        src="/divider-line-min-2048x35.png"
         alt=""
         className="h-full max-w-6xl md:mb-5  mt-10  md:mt-20 w-full mx-auto"
       />

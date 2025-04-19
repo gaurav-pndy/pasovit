@@ -126,8 +126,7 @@ const Testimonials = () => {
     <section
       className="relative py-0 px-0 md:px-12.5 min-h-[70vh] lg:min-h-[40vh] xl:min-h-[80vh] bg-left overflow-hidden"
       style={{
-        backgroundImage:
-          "url('https://www.pasovit.com/wp-content/uploads/2022/02/testimonials-background-min.png')",
+        backgroundImage: "url('/home/testimonials-background-min.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}

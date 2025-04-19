@@ -22,11 +22,7 @@ export default function Footer() {
       <div className=" mx-auto px-5 md:px-8 grid lg:grid-cols-[0.6fr_1.2fr_auto]  xl:grid-cols-[1fr_1.5fr_auto] gap-8 md:gap-10 ">
         {/* Left Section - Logo & Socials */}
         <div>
-          <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/logo-white.png"
-            alt="Pasovit Logo"
-            className="h-12"
-          />
+          <img src="/logo-white.png" alt="Pasovit Logo" className="h-12" />
           <p className="mt-6 ">
             Leading global technology consultancy that integrates strategy,
             design, and software engineering.

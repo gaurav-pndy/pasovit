@@ -10,22 +10,22 @@ import CalButton from "./CalButton";
 const services = [
   {
     title: "Application Development",
-    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-1_1.svg", // Replace with actual image path
+    image: "/home/service-1_1.svg", // Replace with actual image path
     link: "/application-development",
   },
   {
     title: "Artificial intelligence & Automation services",
-    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-2_1.svg", // Replace with actual image path
+    image: "/home/service-2_1.svg", // Replace with actual image path
     link: "/artificial-intelligence",
   },
   {
     title: "Digital Marketing",
-    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-3_1.svg", // Replace with actual image path
+    image: "/home/service-3_1.svg", // Replace with actual image path
     link: "/digital-marketing",
   },
   {
     title: "Healthcare Facilitator",
-    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-4_1.svg", // Replace with actual image path
+    image: "/home/service-4_1.svg", // Replace with actual image path
     link: "/healthcare-facilitator",
   },
 ];
@@ -41,7 +41,7 @@ export default function Header() {
         <div className="text-2xl font-bold text-blue-700">
           <Link to={"/"}>
             <img
-              src="https://www.pasovit.com/wp-content/uploads/2022/02/main-logo-big.svg"
+              src="/main-logo-big.svg"
               alt="Pasovit"
               className="h-10 md:h-12"
             />
@@ -108,7 +108,7 @@ export default function Header() {
         {/* <button className="hidden lg:block bg-[#001e8a] cursor-pointer text-white px-6 py-2.5 rounded font-medium hover:bg-blue-800">
           Book Free Strategy Call
         </button> */}
-        <div className="hidden lg:block border ">
+        <div className="hidden lg:block  ">
           <CalButton />
         </div>
 

@@ -15,8 +15,7 @@ const About = () => {
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/contact-header-bg-min.png')",
+          backgroundImage: "url('/contact-header-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center left",
@@ -40,7 +39,7 @@ const About = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/aboutpage-hero-image.svg"
+            src="/about/aboutpage-hero-image.svg"
             alt="Pasovit Illustration"
             className="w-64 max-w-md md:w-96 "
           />
@@ -78,8 +77,7 @@ const About = () => {
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/proposal-background-min.png')",
+          backgroundImage: "url('/about/proposal-background-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center left",
@@ -104,7 +102,7 @@ const About = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/coherence-image.svg"
+            src="/about/coherence-image.svg"
             alt="Pasovit Illustration"
             className="w-64 max-w-md md:w-[30rem] "
           />
@@ -137,7 +135,7 @@ const About = () => {
 
       <section className="max-w-5xl flex flex-col items-center mx-auto my-20 px-4">
         <img
-          src="https://www.pasovit.com/wp-content/uploads/2022/02/pasovit-teamwork.svg"
+          src="/about/pasovit-teamwork.svg"
           alt=""
           className="w-full h-full"
         />
@@ -149,8 +147,7 @@ const About = () => {
       <section
         className="flex max-w-6xl flex-col items-center h-56 md:h-80 xl:h-[50vh]  justify-center mx-auto mt-28 px-4"
         style={{
-          backgroundImage:
-            "url(https://www.pasovit.com/wp-content/uploads/2022/02/map-bg-min.png)",
+          backgroundImage: "url(/common/map-bg-min.png)",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",

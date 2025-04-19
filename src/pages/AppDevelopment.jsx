@@ -12,13 +12,12 @@ import SEO from "../components/SEO";
 const services = [
   {
     title: "WEBSITE & WEB APP DEVELOPMENT",
-    image:
-      "https://www.pasovit.com/wp-content/uploads/2022/02/website-development.svg", // Replace with actual image path
+    image: "/AppDevelopment/website-development.svg", // Replace with actual image path
     link: "/application-development/web-development",
   },
   {
     title: "ANDROID & MOBILE APP DEVELOPMENT",
-    image: "https://www.pasovit.com/wp-content/uploads/2022/02/mobile-app.svg", // Replace with actual image path
+    image: "/AppDevelopment/mobile-app.svg", // Replace with actual image path
     link: "/application-development/mobile-app-development",
   },
 ];
@@ -36,8 +35,7 @@ const AppDevelopment = () => {
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
-          backgroundImage:
-            "url('https://www.pasovit.com/wp-content/uploads/2022/02/contact-header-bg-min.png')",
+          backgroundImage: "url('/contact-header-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center left",
@@ -58,7 +56,7 @@ const AppDevelopment = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/application-services-hero-image_1.svg"
+            src="/AppDevelopment/application-services-hero-image_1.svg"
             alt="Rocket Illustration"
             className="w-64 max-w-md md:w-96 "
           />
@@ -101,7 +99,7 @@ const AppDevelopment = () => {
       </section>
 
       <img
-        src="https://www.pasovit.com/wp-content/uploads/2022/02/divider-line-min-2048x35.png"
+        src="/divider-line-min-2048x35.png"
         alt=""
         className="h-full max-w-6xl my-5 w-full mx-auto"
       />
@@ -110,7 +108,7 @@ const AppDevelopment = () => {
       <ProcessFlow />
       <Strategy />
       <img
-        src="https://www.pasovit.com/wp-content/uploads/2022/02/divider-line-min-2048x35.png"
+        src="/divider-line-min-2048x35.png"
         alt=""
         className="h-full max-w-6xl my-5 w-full mx-auto"
       />

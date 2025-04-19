@@ -6,8 +6,7 @@ const WantToTalk = () => {
     <section
       className="flex max-w-6xl flex-col items-center h-56 md:h-80 xl:h-[50vh]  justify-center mx-auto "
       style={{
-        backgroundImage:
-          "url(https://www.pasovit.com/wp-content/uploads/2022/02/map-bg-min.png)",
+        backgroundImage: "url(/common/map-bg-min.png)",
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",

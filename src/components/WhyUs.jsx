@@ -2,28 +2,28 @@
 
 const features = [
   {
-    imgSrc: "https://www.pasovit.com/wp-content/uploads/2022/02/why-1_1.svg",
+    imgSrc: "/common/why-1_1.svg",
     label: "Transparent Process",
   },
   {
-    imgSrc: "https://www.pasovit.com/wp-content/uploads/2022/02/why-P-2.svg",
+    imgSrc: "/common/why-P-2.svg",
     label: "Customer First",
   },
   {
-    imgSrc: "https://www.pasovit.com/wp-content/uploads/2022/02/why-P-3.svg",
+    imgSrc: "/common/why-P-3.svg",
     label: "Reliable Quality",
   },
   {
-    imgSrc: "https://www.pasovit.com/wp-content/uploads/2022/02/why-P-4.svg",
+    imgSrc: "/common/why-P-4.svg",
     label: "Full-Service Tech Partner",
   },
   {
-    imgSrc: "https://www.pasovit.com/wp-content/uploads/2022/02/why-P-5.svg",
+    imgSrc: "/common/why-P-5.svg",
     label: "360-Degree Approach",
   },
 
   {
-    imgSrc: "https://www.pasovit.com/wp-content/uploads/2022/02/why-P-6.svg",
+    imgSrc: "/common/why-P-6.svg",
     label: "Impactful Brainstorming",
   },
 ];
@@ -62,7 +62,7 @@ export default function WhyUs() {
         {/* Right Image */}
         <div className="">
           <img
-            src="https://www.pasovit.com/wp-content/uploads/2022/02/about-P.svg" // replace with actual image path
+            src="/common/about-P.svg" // replace with actual image path
             alt="Why Choose Us Illustration"
             className="w-60 lg:w-96 mx-auto"
           />

@@ -19,7 +19,7 @@ export default function HowWeWork() {
           {/* Process Digitalisation */}
           <div className="flex flex-col md:h-54 md:flex-row gap-10 items-center">
             <img
-              src="https://www.pasovit.com/wp-content/uploads/2022/02/digitalization@3x.png"
+              src="/common/digitalization@3x.png"
               alt="Process Digitalisation"
               className="w-full max-w-xs rounded-lg"
             />
@@ -63,7 +63,7 @@ export default function HowWeWork() {
               </p>
             </div>
             <img
-              src="https://www.pasovit.com/wp-content/uploads/2022/02/AI-img@3x-1536x1024.png"
+              src="/common/AI-img@3x-1536x1024.png"
               alt="AI Systems"
               className="w-full max-w-xs rounded-lg"
             />

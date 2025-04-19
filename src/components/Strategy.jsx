@@ -5,8 +5,7 @@ const Strategy = () => {
     <section
       className="relative flex  items-center justify-center  gap-20  px-3 md:px-16 xl:px-32 py-16 md:py-20 mt-5"
       style={{
-        backgroundImage:
-          "url('https://www.pasovit.com/wp-content/uploads/2022/02/proposal-background-min.png')",
+        backgroundImage: "url('/common/proposal-background-min.png')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center left",
@@ -17,7 +16,7 @@ const Strategy = () => {
       {/* Right Side Illustration */}
 
       <img
-        src="https://www.pasovit.com/wp-content/uploads/2022/03/strategy-image.svg"
+        src="/common/strategy-image.svg"
         alt="Rocket Illustration"
         className=" md:w-[90%]"
       />

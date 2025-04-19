@@ -4,22 +4,22 @@ import { Link } from "react-router";
 const services = [
   {
     title: "Application <br/> Development",
-    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-1_1.svg", // Replace with actual image path
+    image: "/home/service-1_1.svg", // Replace with actual image path
     link: "/application-development",
   },
   {
     title: "Artificial intelligence & Automation services",
-    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-2_1.svg", // Replace with actual image path
+    image: "/home/service-2_1.svg", // Replace with actual image path
     link: "/artificial-intelligence",
   },
   {
     title: "Digital <br/> Marketing",
-    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-3_1.svg", // Replace with actual image path
+    image: "/home/service-3_1.svg", // Replace with actual image path
     link: "/digital-marketing",
   },
   {
     title: "Healthcare <br/> Facilitator",
-    image: "https://www.pasovit.com/wp-content/uploads/2022/02/service-4_1.svg", // Replace with actual image path
+    image: "/home/service-4_1.svg", // Replace with actual image path
     link: "/healthcare-facilitator",
   },
 ];
