@@ -161,6 +161,13 @@ export default function Footer() {
               >
                 Privacy Policy
               </Link>
+              <span className="md:hidden px-2">|</span>
+              <Link
+                to="/refund-policy"
+                className="hover:underline hover:text-yellow-200 "
+              >
+                Refund Policy
+              </Link>
             </div>
           </div>
         </div>

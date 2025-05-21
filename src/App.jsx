@@ -24,6 +24,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import SEOService from "./pages/DigitalMarketing/SEOService";
 import { useEffect } from "react";
+import RefundPolicy from "./pages/RefundPolicy";
 
 function App() {
   useEffect(() => {
@@ -120,6 +121,10 @@ function App() {
         {
           path: "/privacy",
           element: <Privacy />,
+        },
+        {
+          path: "/refund-policy",
+          element: <RefundPolicy />,
         },
       ],
     },
