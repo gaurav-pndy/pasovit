@@ -26,7 +26,7 @@ const items = [
        <ol class='list-decimal list-outside ml-6 md:ml-10'>
       <li><b>Contact Support:</b> Email our support team at support@pasovit.com within 14 days of purchase.</li> <br/>
       <li><b>Provide Details:</b> Include your order number, the reason for the refund request, and any relevant documentation or evidence.</li><br/>
-      <li><b>Await Response:</b> Our team will review your request and respond within 5 business days.</li>
+      <li><b>Await Response:</b> Our team will review your request and respond within 3 business days.</li>
       </ol>`,
   },
   {
