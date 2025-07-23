@@ -5,7 +5,7 @@ const CalButtonWhite = ({
   namespace = "strategy-call",
   link = "pasovit/strategy-call",
   layout = "month_view",
-  buttonText = "Book Free Strategy Call",
+  buttonText = "Book a Free Discovery Call",
 }) => {
   useEffect(() => {
     (async function () {

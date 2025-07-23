@@ -49,7 +49,8 @@ const Partnerships = () => {
             Our Bond
           </p> */}
           <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-semibold leading-10 mt-4">
-            It’s all about our <br className="hidden md:block" /> Partnership
+            It’s all about our <br className="hidden md:block" />
+            Worldwide Partnerships
           </h2>
         </div>
 

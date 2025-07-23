@@ -11,7 +11,6 @@ const About = () => {
         keywords="About Pasovit, company info, web development team, Pasovit Technologies"
         url="https://pasovit.com/about"
       />
-
       <section
         className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
         style={{
@@ -45,7 +44,6 @@ const About = () => {
           />
         </div>
       </section>
-
       <section className="max-w-6xl mx-auto my-20 px-4">
         <div className="md:pl-6 text-center">
           {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
@@ -73,66 +71,95 @@ const About = () => {
           </p>
         </div>
       </section>
-
       <section
-        className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[65vh] gap-10 md:gap-20  px-8 md:px-16 xl:px-32 py-16 mb-5"
+        className="relative  .contact-places-bg  xl:h-[70vh]   px-8 md:px-16 xl:px-48 py-16 mb-5"
         style={{
-          backgroundImage: "url('/about/proposal-background-min.png')",
+          backgroundImage: "url('/contact/address-bg-min.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center left",
+          // backgroundPosition: "top right",
         }}
       >
         {/* Left Side Content */}
-        <div className="lg:w-1/2 text-center lg:text-left lg:pl-20">
-          {/* <p className="text-white text-xl  tracking-[2px] uppercase">BELIEF</p> */}
-          <h1 className="text-4xl md:text-5xl text-white font-[500] leading-tight mt-4">
-            We are what we Believe in
-          </h1>
+        {/* <p className="text-white text-xl  tracking-[2px] uppercase">SPOT US</p> */}
+        <h1 className="text-3xl tracking-wide md:text-[2.5rem] font-[500] leading-10 text-white  mt-4">
+          Our offices around <br className="hidden md:block" /> the world
+        </h1>
 
-          <p className="text-white text-xl mt-4">
-            We are what we believe in. And we believe in Coherence. Be it a
-            simple project or a complex product, solutions with coherence work
-            the best!
-            <br />
-            <br /> Always!
-          </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 text-white lg:grid-cols-4 gap-10 mt-12 ">
+          <div className="flex flex-col gap-4">
+            <div className="h-24 ">
+              <img src="/chennai.svg" alt="" className="h-full  " />
+            </div>
+
+            <h5 className="text-[1.4rem] font-[500] ">CHENNAI - IN</h5>
+            <p>
+              715 A, 7th Floor, Spencer Plaza, Suite No. 718, Mount Road, Anna
+              Salai, Chennai – 600 002, India
+            </p>
+          </div>
+          <div className="flex flex-col gap-4">
+            <div className="h-24">
+              <img src="/delhi.svg" alt="" className="h-full " />
+            </div>{" "}
+            <h5 className="text-[1.4rem] font-[500] ">DELHI - IN</h5>
+            <p>
+              B - 1, Greater Kailash II, Third Floor, New Delhi - 110 048,{" "}
+              <br /> India
+            </p>
+          </div>
+          <div className="flex flex-col gap-4">
+            <div className="h-24">
+              <img src="/moscow.svg" alt="" className="h-full " />
+            </div>{" "}
+            <h5 className="text-[1.4rem] font-[500] ">MOSCOW - RU</h5>
+            <p>
+              606C, 1C1, Volokolomskoe Shosse, Moscow -125 080, Russian
+              Federation
+            </p>
+          </div>
+          <div className="flex flex-col gap-4">
+            <div className="h-24">
+              <img src="/airdrie.svg" alt="" className="h-full " />
+            </div>{" "}
+            <h5 className="text-[1.4rem] font-[500] ">AIRDRIE - UK</h5>
+            <p>5 Victoria Place, Airdrie, Scotland, United Kingdom - ML6 9BU</p>
+          </div>
         </div>
 
         {/* Right Side Illustration */}
-        <div className="lg:w-1/2 flex justify-center">
-          <img
-            src="/about/coherence-image.svg"
-            alt="Pasovit Illustration"
-            className="w-64 max-w-md md:w-[30rem] "
-          />
+      </section>{" "}
+      <section className="bg-white  py-16">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col ">
+          {/* Left Content */}
+          <div>
+            <div className="text-center  lg:pl-4">
+              {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
+              PROCESS FLOW
+            </p> */}
+              <h2 className="text-3xl sm:text-[2.5rem] tracking-wide font-[500] text-[#262626] mt-4 mb-16">
+                How we work ?
+              </h2>
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="w-full hidden md:block md:px-8">
+            <img
+              src="/common/process-flow.png" // replace with actual image path
+              alt="Why Choose Us Illustration"
+              className="h-full max-w-6xl  w-full mx-auto"
+            />
+          </div>
+          <div className="w-full md:hidden px-4">
+            <img
+              src="/common/progress-work.svg" // replace with actual image path
+              alt="Why Choose Us Illustration"
+              className="h-full max-w-6xl  w-full mx-auto"
+            />
+          </div>
         </div>
       </section>
-
-      <section className="max-w-6xl mx-auto my-20 px-4">
-        <div className="md:pl-6 text-center">
-          {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
-            WORK
-          </p> */}
-          <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">
-            How we work
-          </h2>
-
-          <h5 className="text-xl font-[500] mt-6 md:mt-10 text-[#262626]">
-            We understand that every single project is a unique opportunity to
-            build something great.
-          </h5>
-          <p className="text-[#728390] mt-6 ">
-            To deliver outstanding software, we work in Agile and Lean. We
-            believe in the power of the iterative process – the step-by-step
-            design,development, testing, and release of functionalities.
-            <br /> <br />
-            We follow a data-driven development loop. Data helps us improve
-            functionalities and add more value with every sprint.
-          </p>
-        </div>
-      </section>
-
       <section className="max-w-5xl flex flex-col items-center mx-auto my-20 px-4">
         <img
           src="/about/pasovit-teamwork.svg"
@@ -143,7 +170,6 @@ const About = () => {
           Book Free Strategy Call
         </button>
       </section>
-
       <section
         className="flex max-w-6xl flex-col items-center h-56 md:h-80 xl:h-[50vh]  justify-center mx-auto mt-28 px-4"
         style={{

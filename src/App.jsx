@@ -25,6 +25,9 @@ import { HelmetProvider } from "react-helmet-async";
 import SEOService from "./pages/DigitalMarketing/SEOService";
 import { useEffect } from "react";
 import RefundPolicy from "./pages/RefundPolicy";
+import SoftwareDev from "./pages/SoftwareDev";
+import ServiceDetails from "./pages/ServiceDetails";
+import WebDev from "./pages/WebDev";
 
 function App() {
   useEffect(() => {
@@ -42,12 +45,12 @@ function App() {
           path: "/about",
           element: <About />,
         },
+        // {
+        //   path: "/contact",
+        //   element: <Contact />,
+        // },
         {
-          path: "/contact",
-          element: <Contact />,
-        },
-        {
-          path: "/application-development",
+          path: "/mobile-app-development",
           element: <AppDevelopment />,
         },
         {
@@ -113,6 +116,18 @@ function App() {
         {
           path: "/healthcare-facilitator",
           element: <Healthcare />,
+        },
+        {
+          path: "/software-development",
+          element: <SoftwareDev />,
+        },
+        {
+          path: "/web-development",
+          element: <WebDev />,
+        },
+        {
+          path: "/:serviceCategory/:serviceId",
+          element: <ServiceDetails />,
         },
         {
           path: "/terms",

@@ -9,25 +9,26 @@ import CalButton from "./CalButton";
 
 const services = [
   {
-    title: "Application Development",
-    image: "/home/service-1_1.svg", // Replace with actual image path
-    link: "/application-development",
+    title: "Software Development",
+    image: "/SoftwareDev/software-development.png",
+    link: "/software-development",
   },
   {
-    title: "Artificial intelligence & Automation services",
-    image: "/home/service-2_1.svg", // Replace with actual image path
-    link: "/artificial-intelligence",
+    title: "Web Development",
+    image: "/WebDev/Web_Development.png", // Replace with actual image path
+    link: "/web-development",
   },
   {
-    title: "Digital Marketing",
-    image: "/home/service-3_1.svg", // Replace with actual image path
-    link: "/digital-marketing",
+    title: "Mobile App Development",
+    image: "/AppDevelopment/mobile-app-development.png",
+    link: "/mobile-app-development",
   },
-  {
-    title: "Healthcare Facilitator",
-    image: "/home/service-4_1.svg", // Replace with actual image path
-    link: "/healthcare-facilitator",
-  },
+
+  //  {
+  //     title: "Healthcare <br/> Facilitator",
+  //     image: "/home/service-4_1.svg",
+  //     link: "/healthcare-facilitator",
+  //   },
 ];
 
 export default function Header() {
@@ -85,6 +86,20 @@ export default function Header() {
                         </div>
                       </Link>
                     ))}
+                    <a
+                      href="https://aeontrix.com/"
+                      target="_blank"
+                      className="flex flex-col items-center text-center group hover:text-blue-700 transition duration-300"
+                    >
+                      <img
+                        src="/home/service-2_1.svg"
+                        alt="Artificial intelligence & Automation services"
+                        className="h-24 w-24 object-contain mb-3 hover:scale-110 transition-transform duration-300"
+                      />
+                      <div className="text-base font-semibold text-gray-800 leading-tight">
+                        Artificial intelligence & Automation services
+                      </div>
+                    </a>
                   </div>
                 </motion.div>
               )}
@@ -97,12 +112,12 @@ export default function Header() {
           >
             About Us
           </Link>
-          <Link
+          {/* <Link
             to="/contact"
             className="hover:text-blue-700 transition-all duration-300"
           >
             Contact Us
-          </Link>
+          </Link> */}
         </nav>
 
         {/* <button className="hidden lg:block bg-[#001e8a] cursor-pointer text-white px-6 py-2.5 rounded font-medium hover:bg-blue-800">
@@ -149,33 +164,42 @@ export default function Header() {
                       className="w-full bg-gray-100 overflow-hidden"
                     >
                       <Link
-                        to="/application-development"
+                        to="/software-development"
                         className="block px-4 py-3 "
                         onClick={() => setIsOpen(false)}
                       >
-                        Application Development
+                        Software Development
                       </Link>
                       <Link
-                        to="/artificial-intelligence"
+                        to="/web-development"
+                        className="block px-4 py-3 "
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Web Development
+                      </Link>
+                      <Link
+                        to="/mobile-app-development"
+                        className="block px-4 py-3 "
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Mobile App Development
+                      </Link>
+
+                      <a
+                        href="https://aeontrix.com/"
+                        target="_blank"
                         className="block px-4 py-3 "
                         onClick={() => setIsOpen(false)}
                       >
                         Artificial Intelligence & Automation Services
-                      </Link>
-                      <Link
-                        to="/digital-marketing"
-                        className="block px-4 py-3 "
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Digital Marketing
-                      </Link>
-                      <Link
+                      </a>
+                      {/* <Link
                         to="/healthcare-facilitator"
                         className="block px-4 py-3 "
                         onClick={() => setIsOpen(false)}
                       >
                         Healthcare Facilitator
-                      </Link>
+                      </Link> */}
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -188,13 +212,13 @@ export default function Header() {
               >
                 About Us
               </Link>
-              <Link
+              {/* <Link
                 to="/contact"
                 className="text-[#001e8a] font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Contact Us
-              </Link>
+              </Link> */}
               <CalButton />
             </motion.div>
           )}

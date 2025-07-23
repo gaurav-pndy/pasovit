@@ -7,6 +7,8 @@ import Partnerships from "../components/HomeComponents/Partnerships";
 import Testimonials from "../components/HomeComponents/Testimonials";
 import CTASection from "../components/HomeComponents/CTASection";
 import SEO from "../components/SEO";
+import WhyPartner from "../components/HomeComponents/WhyPartner";
+import ContactUs from "../components/HomeComponents/ContactUs";
 
 const Home = () => {
   return (
@@ -22,9 +24,11 @@ const Home = () => {
       <AboutSection />
       <ServicesSection />
       {/* <RecentWork /> */}
+      <WhyPartner />
       <Partnerships />
-      <Testimonials />
-      <CTASection />
+      {/* <Testimonials /> */}
+      {/* <CTASection /> */}
+      <ContactUs />
     </div>
   );
 };

@@ -19,13 +19,15 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer className="bg-[#001e8a] text-white mt-20 pt-10">
-      <div className=" mx-auto px-5 md:px-8 grid lg:grid-cols-[0.6fr_1.2fr_auto]  xl:grid-cols-[1fr_1.5fr_auto] gap-8 md:gap-10 ">
+      <div className=" mx-auto px-5 md:px-8 grid lg:grid-cols-[0.6fr_1.2fr_auto]  xl:grid-cols-[1.2fr_1.5fr_1fr] gap-8 md:gap-10 ">
         {/* Left Section - Logo & Socials */}
         <div>
-          <img src="/logo-white.png" alt="Pasovit Logo" className="h-12" />
-          <p className="mt-6 ">
-            Leading global technology consultancy that integrates strategy,
-            design, and software engineering.
+          <img src="/logo-white.png" alt="Pasovit Logo" className="h-12 mb-2" />
+          <p>Driving Digital Innovation Worldwide</p>
+          <p className="mt-6 text-sm text-gray-300">
+            A global technology consulting company delivering tailored solutions
+            in strategy, design, and software development to help businesses
+            scale and succeed.
           </p>
           {/* Social Icons */}
           <div className="flex space-x-3 mt-6 text-[#001e8a]">
@@ -75,6 +77,28 @@ export default function Footer() {
             >
               {" "}
               <FaWhatsapp className="" size={24} />
+            </Link>
+          </div>
+          <div className="mt-8 flex  justify-center md:justify-normal gap-4 text-sm">
+            <Link
+              to="/terms"
+              className="hover:underline hover:text-yellow-200 "
+            >
+              Terms of Use
+            </Link>{" "}
+            <span className=" px-2">|</span>
+            <Link
+              to="/privacy"
+              className="hover:underline hover:text-yellow-200 "
+            >
+              Privacy Policy
+            </Link>
+            <span className=" px-2">|</span>
+            <Link
+              to="/refund-policy"
+              className="hover:underline hover:text-yellow-200 "
+            >
+              Refund Policy
             </Link>
           </div>
         </div>
@@ -138,60 +162,38 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/contact"
                   className="hover:underline hover:text-yellow-200 "
                 >
                   Contact Us
                 </Link>
-              </li>
+              </li> */}
             </ul>
-            <div className="mt-4 flex md:flex-col justify-center md:justify-normal md:space-y-2.5">
-              <Link
-                to="/terms"
-                className="hover:underline hover:text-yellow-200 "
-              >
-                Terms of Use
-              </Link>{" "}
-              <span className="md:hidden px-2">|</span>
-              <Link
-                to="/privacy"
-                className="hover:underline hover:text-yellow-200 "
-              >
-                Privacy Policy
-              </Link>
-              <span className="md:hidden px-2">|</span>
-              <Link
-                to="/refund-policy"
-                className="hover:underline hover:text-yellow-200 "
-              >
-                Refund Policy
-              </Link>
-            </div>
           </div>
         </div>
 
         {/* Right Section - Contact Info */}
         <div className=" flex flex-col items-center lg:items-start  ">
           <h3 className="font-semibold text-lg">CONTACT INFO</h3>
-          <ul className="mt-4 space-y-2 flex lg:flex-col  w-full  justify-evenly lg:justify-between items-center lg:items-start">
-            <li>
+          <ul className="mt-4 space-y-2 flex lg:flex-col  w-full  justify-evenly  lg:justify-between ">
+            <li className="">
               <a
-                href="tel:+919871819993"
+                href="tel:+918778931001"
                 target="_blank"
-                className="flex items-center"
+                className="flex items-center "
               >
-                <Phone size={18} className="mr-2" /> +91 98718 19993
+                <Phone size={18} className="mr-2" /> +91 8778931001
               </a>
             </li>
             <li>
               <a
-                href="mailto:info@pasovit.com"
+                href="mailto:contact@pasovit.com"
                 target="_blank"
                 className="flex items-center"
               >
-                <Mail size={18} className="mr-2" /> info@pasovit.com
+                <Mail size={18} className="mr-2" /> contact@pasovit.com
               </a>
             </li>
           </ul>

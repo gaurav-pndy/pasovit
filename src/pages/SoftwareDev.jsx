@@ -10,17 +10,17 @@ import CalButtonWhite from "../components/CalButtonWhite";
 import SEO from "../components/SEO";
 import { services } from "../data/servicesData"; // Adjust the import path as necessary
 
-const AppDevelopment = () => {
-  const appServices = services.filter(
-    (service) => service.category == "mobile-app-development"
+const SoftwareDev = () => {
+  const softwareServices = services.filter(
+    (service) => service.category == "software-development"
   );
   return (
     <div>
       <SEO
-        title="Mobile App Development | Pasovit Technologies"
-        description="Build fast, scalable, and user-friendly mobile apps for Android and iOS. From intuitive UI design to post-launch support, we deliver secure and high-performing mobile solutions tailored to your needs."
-        keywords="mobile app development, Android app development, iOS app development, custom mobile apps, mobile UI design, app maintenance"
-        url="https://pasovit.com/mobile-app-development"
+        title="Software Development | Pasovit Technologies"
+        description="Discover tailored software development services for startups, SMEs, and enterprises. We build secure, scalable ERP, CRM, and custom platforms to boost automation, engagement, and efficiency."
+        keywords="custom software development, enterprise software, ERP development, CRM systems, workflow automation, software solutions"
+        url="https://pasovit.com/software-development"
       />
 
       <section
@@ -35,7 +35,8 @@ const AppDevelopment = () => {
         {/* Left Side Content */}
         <div className="lg:w-1/2 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl text-white font-[900] leading-tight">
-            Custom Mobile App Development for Android, iOS, and Ongoing Support
+            Custom Software Development Solutions for Enterprises and Growing
+            Businesses
             <span className="text-[#E81F38]">.</span>
           </h1>
 
@@ -45,19 +46,21 @@ const AppDevelopment = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="/AppDevelopment/mobile-app-development.png"
-            alt="Mobile App Development Illustration"
+            src="/SoftwareDev/software-development.png"
+            alt="Software Development Illustration"
             className="w-64 max-w-md md:w-96 "
           />
         </div>
       </section>
       <section className="text-[#4b4f58] max-w-5xl md:text-lg mt-20 mx-auto px-4">
         <p>
-          We specialize in mobile app development services tailored for Android
-          and iOS platforms. Whether you're launching a new app or need
-          long-term support, we deliver fast, scalable, and user-friendly mobile
-          solutions. From sleek UI design to post-launch maintenance, we ensure
-          your app performs flawlessly, stays secure, and keeps users engaged.
+          Our software development services are tailored to meet the unique
+          demands of startups, SMEs, and large enterprises. From building custom
+          software and enterprise-grade platforms to developing ERP and CRM
+          systems, we deliver secure, scalable, and high-performing solutions.
+          We focus on your business goals and craft powerful applications that
+          improve workflow automation, enhance customer engagement, and drive
+          operational efficiency.
         </p>
       </section>
 
@@ -67,14 +70,14 @@ const AppDevelopment = () => {
             OUR SERVICES
           </p> */}
           <h2 className="text-3xl md:text-[2.5rem] tracking-wide font-[500] leading-10 text-[#262626] mt-4">
-            Mobile App Development services <br className="hidden lg:block" />{" "}
-            we provide
+            Software Development services <br className="hidden lg:block" /> we
+            provide
           </h2>
         </div>
 
         <div className="mt-12  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {appServices.map((service, index) => (
-            <Link to={`/mobile-app-development/${service.id}`} key={index}>
+          {softwareServices.map((service, index) => (
+            <Link to={`/software-development/${service.id}`} key={index}>
               <div className="bg-[#f7f7f9]  hover:bg-[#001e8a]/30 transition-all duration-300 rounded p-6 py-8 text-center h-full">
                 <img
                   src={service.image}
@@ -111,4 +114,4 @@ const AppDevelopment = () => {
   );
 };
 
-export default AppDevelopment;
+export default SoftwareDev;
