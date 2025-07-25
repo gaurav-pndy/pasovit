@@ -56,7 +56,7 @@ export default function Hero() {
     >
       {/* Left Side Content */}
       <div className="lg:w-1/2">
-        <h1 className="text-[2.4rem] md:text-7xl font-bold leading-tight text-center lg:text-left">
+        <h1 className="text-[2.4rem] md:text-7xl font-bold  text-center lg:text-left">
           We develop <br />
           <span className="text-black">Digital Solutions</span>
           <span className="text-red-600">.</span>
