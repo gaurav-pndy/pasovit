@@ -48,15 +48,15 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[calc(100vh-6rem)] gap-10 md:gap-16 px-4 md:px-16 xl:px-32 py-5 lg:py-16"
+      className="relative flex flex-col lg:flex-row items-center justify-between xl:h-[calc(100vh-6rem)] gap-10 md:gap-16 px-4 md:px-16 xl:px-28  py-5 lg:py-16"
       style={{
         backgroundImage: "url('/home/Hero-background-min.png')",
         backgroundSize: "cover",
       }}
     >
       {/* Left Side Content */}
-      <div className="lg:w-1/2">
-        <h1 className="text-[2.4rem] md:text-7xl font-bold  text-center lg:text-left">
+      <div className="lg:w-1/2 ">
+        <h1 className="text-[2.4rem] md:text-7xl font-bold leading-tight text-center lg:text-left ">
           We develop <br />
           <span className="text-black">Digital Solutions</span>
           <span className="text-red-600">.</span>
