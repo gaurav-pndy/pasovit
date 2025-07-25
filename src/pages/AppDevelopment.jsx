@@ -81,7 +81,7 @@ const AppDevelopment = () => {
                   alt={service.name}
                   className="mx-auto mb-4 h-40 hover:scale-110 transition-all duration-300 cursor-pointer"
                 />
-                <p className="uppercase underline font-[450] text-[#262626] leading-snug ">
+                <p className="font-semibold text-lg text-[#262626] leading-snug ">
                   {service.name}
                 </p>
               </div>

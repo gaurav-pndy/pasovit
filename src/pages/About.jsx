@@ -1,5 +1,6 @@
 import React from "react";
 import CalButtonWhite from "../components/CalButtonWhite";
+import CalButton from "../components/CalButton";
 import SEO from "../components/SEO";
 
 const About = () => {
@@ -164,11 +165,9 @@ const About = () => {
         <img
           src="/about/pasovit-teamwork.svg"
           alt=""
-          className="w-full h-full"
+          className="w-full h-full mb-6"
         />
-        <button className="mt-6 bg-[#001e8a] text-white  rounded font-medium hover:bg-blue-800 cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300">
-          Book Free Strategy Call
-        </button>
+        <CalButton />
       </section>
       <section
         className="flex max-w-6xl flex-col items-center h-56 md:h-80 xl:h-[50vh]  justify-center mx-auto mt-28 px-4"

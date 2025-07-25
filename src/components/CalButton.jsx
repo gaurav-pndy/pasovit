@@ -1,32 +1,27 @@
-import React, { useEffect } from "react";
 import { getCalApi } from "@calcom/embed-react";
-
-const CalButton = ({
-  namespace = "strategy-call",
-  link = "pasovit/strategy-call",
-  layout = "month_view",
-  buttonText = "Book a Free Discovery Call",
-}) => {
+import { useEffect } from "react";
+export default function MyApp() {
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi({ namespace });
+      const cal = await getCalApi({ namespace: "discovery-call" });
       cal("ui", {
+        cssVarsPerTheme: {
+          light: { "cal-brand": "#001e8a" },
+          dark: { "cal-brand": "#3894e5" },
+        },
         hideEventTypeDetails: false,
-        layout,
+        layout: "month_view",
       });
     })();
-  }, [namespace, layout]);
-
+  }, []);
   return (
     <button
-      data-cal-namespace={namespace}
-      data-cal-link={link}
-      data-cal-config={JSON.stringify({ layout })}
+      data-cal-namespace="discovery-call"
+      data-cal-link="pasovit/discovery-call"
+      data-cal-config='{"layout":"month_view"}'
       className=" bg-[#001e8a] text-white  rounded font-medium hover:bg-blue-800 cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300"
     >
-      {buttonText}
+      Book a Free Discovery Call
     </button>
   );
-};
-
-export default CalButton;
+}

@@ -47,7 +47,7 @@ const ServicesSection = () => {
                 className="mx-auto mb-4 h-52 md:h-42 hover:scale-110 transition-all duration-300 cursor-pointer"
               />
               <p
-                className="text-lg underline font-semibold text-[##262626] leading-snug "
+                className="text-lg  font-semibold text-[##262626] leading-snug "
                 dangerouslySetInnerHTML={{ __html: service.title }}
               ></p>
             </div>
@@ -65,7 +65,7 @@ const ServicesSection = () => {
           />
           <p
             target="_blank"
-            className="text-lg underline font-semibold text-[##262626] leading-snug "
+            className="text-lg  font-semibold text-[##262626] leading-snug "
           >
             Artificial intelligence & Automation services
           </p>

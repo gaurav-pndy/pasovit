@@ -1,5 +1,6 @@
 import React from "react";
 import SEO from "../components/SEO";
+import CalButton from "../components/CalButton";
 
 const Contact = () => {
   return (
@@ -49,13 +50,11 @@ const Contact = () => {
           {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
             CONSULTATION
           </p> */}
-          <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4">
+          <h2 className="text-3xl text-[#262626] tracking-wide md:text-[2.5rem] font-[500] leading-10 mt-4 mb-6">
             Let's catch the initial{" "}
             <span className="text-[#E81F38]">Spark!</span>
           </h2>
-          <button className="bg-[#001e8a] text-white  rounded font-medium hover:bg-blue-800 cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300 mt-6 md:mt-10">
-            Book Free Strategy Call
-          </button>
+          <CalButton />
         </div>
 
         <div className="lg:w-1/2 flex justify-center">
@@ -141,7 +140,7 @@ const Contact = () => {
 
         <a href="mailto:contact@pasovit.com" target="_blank">
           <button className="bg-[#001e8a] text-white  rounded font-medium hover:bg-blue-800 cursor-pointer px-6 py-2.5  md:text-lg shadow-md  transition-all duration-300 mt-6 md:mt-14">
-            Book Free Strategy Call
+            Book a Free Discovery Call
           </button>
         </a>
       </section>
