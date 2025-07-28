@@ -46,7 +46,7 @@ const SoftwareDev = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="/SoftwareDev/software-development.png"
+            src="/SoftwareDev/main-white.png"
             alt="Software Development Illustration"
             className="w-64 max-w-md md:w-96 "
           />

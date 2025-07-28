@@ -46,7 +46,7 @@ const WebDev = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="/WebDev/Web_Development.png"
+            src="/WebDev/main-white.png"
             alt="Web Development Illustration"
             className="w-64 max-w-md md:w-96 "
           />

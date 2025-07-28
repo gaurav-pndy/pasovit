@@ -10,17 +10,17 @@ import CalButton from "./CalButton";
 const services = [
   {
     title: "Software Development",
-    image: "/SoftwareDev/software-development.png",
+    image: "/SoftwareDev/main.png",
     link: "/software-development",
   },
   {
     title: "Web Development",
-    image: "/WebDev/Web_Development.png", // Replace with actual image path
+    image: "/WebDev/main.png", // Replace with actual image path
     link: "/web-development",
   },
   {
     title: "Mobile App Development",
-    image: "/AppDevelopment/mobile-app-development.png",
+    image: "/AppDevelopment/main.png",
     link: "/mobile-app-development",
   },
 
@@ -92,7 +92,7 @@ export default function Header() {
                       className="flex flex-col items-center text-center group hover:text-blue-700 transition duration-300"
                     >
                       <img
-                        src="/home/service-2_1.svg"
+                        src="/AI/main.png"
                         alt="Artificial intelligence & Automation services"
                         className="h-24 w-24 object-contain mb-3 hover:scale-110 transition-transform duration-300"
                       />

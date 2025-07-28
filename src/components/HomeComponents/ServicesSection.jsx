@@ -4,17 +4,17 @@ import { Link } from "react-router";
 const services = [
   {
     title: "Software <br/> Development",
-    image: "/SoftwareDev/software-development.png",
+    image: "/SoftwareDev/main.png",
     link: "/software-development",
   },
   {
     title: "Web <br/> Development",
-    image: "/WebDev/Web_Development.png", // Replace with actual image path
+    image: "/WebDev/main.png", // Replace with actual image path
     link: "/web-development",
   },
   {
     title: "Mobile App <br/> Development",
-    image: "/AppDevelopment/mobile-app-development.png",
+    image: "/AppDevelopment/main.png",
     link: "/mobile-app-development",
   },
 
@@ -59,7 +59,7 @@ const ServicesSection = () => {
           className="bg-white shadow-[0_6px_15px_rgba(0,0,0,0.15)] hover:bg-[#001e8a]/30 transition-all duration-300 rounded p-6 py-8 text-center "
         >
           <img
-            src="/home/service-2_1.svg"
+            src="/AI/main.png"
             alt="Artificial intelligence & Automation services"
             className="mx-auto mb-4 h-52 md:h-42 hover:scale-110 transition-all duration-300 cursor-pointer"
           />

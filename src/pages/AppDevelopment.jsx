@@ -45,7 +45,7 @@ const AppDevelopment = () => {
         {/* Right Side Illustration */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="/AppDevelopment/mobile-app-development.png"
+            src="/AppDevelopment/main-white.png"
             alt="Mobile App Development Illustration"
             className="w-64 max-w-md md:w-96 "
           />
