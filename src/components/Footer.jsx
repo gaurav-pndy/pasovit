@@ -116,42 +116,41 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:underline hover:text-yellow-200 ">
-                  What We Do ?
-                </Link>
+                <Link to="#">What We Do ?</Link>
               </li>
               <ul className="ml-4 list-[square] space-y-1">
                 <li>
                   <Link
-                    to="/application-development"
+                    to="/software-development"
                     className="hover:underline hover:text-yellow-200 "
                   >
-                    Application Development
+                    Software Development
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/artificial-intelligence"
+                    to="/web-development"
                     className="hover:underline hover:text-yellow-200 "
                   >
-                    Artificial Intelligence & Automation
+                    Web Development
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/digital-marketing"
+                    to="/mobile-app-development"
                     className="hover:underline hover:text-yellow-200 "
                   >
-                    Digital Marketing
+                    Mobile App Development
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/healthcare-facilitator"
+                  <a
+                    href="https://aeontrix.com/"
+                    target="_blank"
                     className="hover:underline hover:text-yellow-200 "
                   >
-                    Healthcare Facilitator
-                  </Link>
+                    Artificial Intelligence & Automation Services
+                  </a>
                 </li>
               </ul>
               <li>

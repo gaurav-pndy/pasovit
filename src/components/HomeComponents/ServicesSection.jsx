@@ -27,7 +27,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="py-16 px-6  max-w-6xl mx-auto">
+    <section id="services" className="py-16 px-6  max-w-6xl mx-auto">
       <div className="md:pl-6 text-center lg:text-left">
         {/* <p className="text-[#E81F38] text-xl  tracking-[2px] uppercase">
           Explore
