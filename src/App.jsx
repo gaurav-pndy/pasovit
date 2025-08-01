@@ -28,6 +28,7 @@ import RefundPolicy from "./pages/RefundPolicy";
 import SoftwareDev from "./pages/SoftwareDev";
 import ServiceDetails from "./pages/ServiceDetails";
 import WebDev from "./pages/WebDev";
+import NotFound from "./pages/NotFound";
 
 function App() {
   useEffect(() => {
@@ -140,6 +141,10 @@ function App() {
         {
           path: "/refund-policy",
           element: <RefundPolicy />,
+        },
+        {
+          path: "*",
+          element: <NotFound />,
         },
       ],
     },
